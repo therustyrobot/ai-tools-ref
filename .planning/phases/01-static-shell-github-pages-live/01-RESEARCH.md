@@ -683,17 +683,19 @@ _data/
 
 ---
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **GitHub Pages URL path — will `index.html` load at root `/` or require `/index.html`?**
    - What we know: GitHub Pages serves `index.html` as the directory index by default
    - What's unclear: Exact trailing-slash behavior for project pages (some CDN configurations require explicit paths)
    - Recommendation: Test `curl -I https://therustyrobot.github.io/ai-tools-ref/` and `curl -I https://therustyrobot.github.io/ai-tools-ref/index.html` — both should 200
+   - **RESOLVED:** GitHub Pages always serves `index.html` as the directory index for both `/` and `/index.html` paths. The trailing-slash URL is canonical; both return HTTP 200. Verification command in Plan 01-02 Task 1 tests the root `/` path.
 
 2. **Sticky sidebar positioning — `md:sticky md:top-[41px]`**
    - What we know: The status strip is ~41px tall (10px text + 8px×2 py = 36px content + 2px border); sidebar should stick below it
    - What's unclear: Exact rendered height of the status strip on different viewports (varies with font metrics)
    - Recommendation: Use `md:top-[41px]` as the initial value; adjust by 4px increments after visual verification in browser
+   - **RESOLVED:** Use `md:top-[41px]` as the planning value. Fine-tuning by 4px increments is an explicit step in Plan 01-02 Task 2 (human-verify checkpoint). No blocker to planning or execution.
 
 ---
 
