@@ -30,7 +30,12 @@
 4. Status strip at the top shows a serial number, hardcoded repo count, and a last-updated timestamp
 5. At least 10 hardcoded sample repo cards render correctly: name as a clickable link (new tab), K-formatted star count, language badge with color dot, description text
 
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Create docs/index.html (full Stitch HTML shell, 12 hardcoded repo cards, 6 sections) + update .gitignore
+- [ ] 01-02-PLAN.md — Enable GitHub Pages from docs/ on main branch + human-verify live URL
+
 **UI hint**: yes
 
 ---
@@ -98,7 +103,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Static Shell + GitHub Pages Live | 0/? | Not started | — |
+| 1. Static Shell + GitHub Pages Live | 2/2 | Not started | — |
 | 2. Live Data Pipeline (no AI) | 0/? | Not started | — |
 | 3. AI Categorization | 0/? | Not started | — |
 | 4. Automated Daily Action | 0/? | Not started | — |
