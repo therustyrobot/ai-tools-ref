@@ -23,8 +23,8 @@ created: 2026-04-21
 | Preset | not applicable | — |
 | Component library | none | STACK.md |
 | Icon library | Material Icons CDN (`fonts.googleapis.com/icon?family=Material+Icons`) | stitch_example/code.html |
-| Mono font | JetBrains Mono 400/700/800 from Google Fonts CDN | stitch_example/code.html |
-| Display font | Inter 900 from Google Fonts CDN | stitch_example/code.html |
+| Mono font | JetBrains Mono 400/700 from Google Fonts CDN | stitch_example/code.html |
+| Display font | Inter 700 from Google Fonts CDN | stitch_example/code.html |
 | CSS framework | Tailwind CDN `https://cdn.tailwindcss.com?plugins=forms,typography` | stitch_example/code.html |
 
 ### Tailwind Config Block (exact — inline `<script>` after CDN `<script>` tag)
@@ -120,12 +120,10 @@ All text uses `font-mono` (JetBrains Mono) except explicit display headings.
 
 | Role | Size | Tailwind | Weight | Line Height | Font | Usage |
 |------|------|----------|--------|-------------|------|-------|
-| Micro label | 10px | `text-[10px]` | 700 | 1.2 | mono | Status strip fields, badge prefixes, metadata keys |
-| Secondary | 12px | `text-xs` | 700 | 1.3 | mono | Nav index numbers, section counts, timestamps |
-| Body / Description | 14px | `text-sm` | 400 | 1.5 | mono | Repo description text, all prose |
-| Card title | 16px | `text-base` | 700 | 1.3 | mono | Repo name links |
-| Section heading | 24px | `text-2xl` | 800 | 1.1 | mono | Category/subcategory section headers |
-| Page display | 48px+ | `text-5xl` (desktop) | 900 | 0.9 | display (Inter) | Page title only — "STARS GALLERY" or equivalent |
+| Micro label | 10px | `text-[10px]` | 700 | 1.2 | mono | Status strip fields, badge prefixes, metadata keys, nav index numbers, section counts, timestamps |
+| Body / Description | 14px | `text-sm` | 400 (prose) / 700 (labels) | 1.5 (prose) / 1.3 (labels) | mono | Repo description text (400); repo name links, section header text, nav category names (700) |
+| Section heading | 24px | `text-2xl` | 700 | 1.1 | mono | Category/subcategory section header bands |
+| Page display | 48px+ | `text-5xl` (desktop) | 700 | 0.9 | display (Inter) | Page title only — "STARS GALLERY" or equivalent |
 
 **Rules:**
 - ALL text is `uppercase` except repo description body text and repo names
@@ -138,6 +136,8 @@ All text uses `font-mono` (JetBrains Mono) except explicit display headings.
 ## Color
 
 ### Dark Mode (Primary — `@media (prefers-color-scheme: dark)`)
+
+> **Split: ~60% `background-dark` (#0D0D0D) / ~30% navy borders + zinc card surfaces / ~10% primary accent (#FF5F1F).**
 
 | Role | Value | Tailwind Token | Usage |
 |------|-------|---------------|-------|
@@ -283,14 +283,14 @@ Fixed, full-width, z-50, pointer-events-none. Defined in `<style>` block per sti
 
 **Sidebar heading band:**
 ```html
-<div class="px-4 py-2 border-b-2 border-navy dark:border-white bg-navy text-white dark:bg-white dark:text-black text-[10px] font-black uppercase tracking-widest">
+<div class="px-4 py-2 border-b-2 border-navy dark:border-white bg-navy text-white dark:bg-white dark:text-black text-[10px] font-bold uppercase tracking-widest">
   INDEX // CATEGORIES
 </div>
 ```
 
 **Category nav item:**
 ```html
-<a href="#ai-ml" class="flex items-center gap-2 px-4 py-2 min-h-[44px] text-xs font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
+<a href="#ai-ml" class="flex items-center gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
   <span class="text-primary text-[10px]">01</span>
   🤖 AI &amp; ML
   <span class="ml-auto text-[10px] opacity-60">120</span>
@@ -299,7 +299,7 @@ Fixed, full-width, z-50, pointer-events-none. Defined in `<style>` block per sti
 
 - Index number: Safety Orange micro text (`text-primary text-[10px]`)
 - Emoji marker: one per top-level category (see emoji map below)
-- Category name: 12px uppercase bold
+- Category name: 10px uppercase bold
 - Repo count: right-aligned micro text, 60% opacity
 - Active state / hover: `bg-primary text-white` (orange fill)
 - Subcategory items (if nested): indented `pl-8`, 10px, no emoji, lighter weight
@@ -338,7 +338,7 @@ misc               → 📦
   <div class="flex items-start justify-between gap-4 mb-1">
     <a href="https://github.com/owner/repo"
        target="_blank" rel="noopener noreferrer"
-       class="text-base font-bold uppercase hover:text-primary transition-colors leading-tight">
+       class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">
       owner/repo-name
     </a>
     <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">
@@ -374,7 +374,7 @@ misc               → 📦
 ### Section Header (Phase 2 full implementation; Phase 1 hardcode)
 
 ```html
-<div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-black text-xs">
+<div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
   <span>🤖 AI &amp; ML // SUBCATEGORY_NAME</span>
   <span class="text-primary">ENTRIES: 12</span>
 </div>
@@ -473,10 +473,10 @@ Mobile nav: display as horizontal scrollable strip OR full-width stacked list �
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STARS GALLERY // [OWNER] // AI-CATEGORIZED REPOS</title>
-  <!-- Google Fonts: JetBrains Mono 400/700/800 + Inter 900 -->
+  <!-- Google Fonts: JetBrains Mono 400/700 + Inter 700 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@700&display=swap" rel="stylesheet" />
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!-- Tailwind CDN -->
