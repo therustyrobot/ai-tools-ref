@@ -1,298 +1,506 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>STARS GALLERY // THERUSTYROBOT // AI-CATEGORIZED REPOS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "media",
-      theme: {
-        extend: {
-          colors: {
-            primary:            "#FF5F1F",
-            "background-light": "#F4F1EA",
-            "background-dark":  "#0D0D0D",
-            "navy":             "#0A0A23",
-          },
-          fontFamily: {
-            mono:    ["'JetBrains Mono'", "monospace"],
-            display: ["'Inter'",          "sans-serif"],
-          },
-          borderRadius: {
-            DEFAULT: "0px",
-            sm:      "0px",
-            md:      "0px",
-            lg:      "0px",
-            full:    "0px",
-          },
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>STARS GALLERY // THERUSTYROBOT // AI-CATEGORIZED REPOS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+  tailwind.config = {
+    darkMode: "media",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#FF5F1F",
+          "background-light": "#F4F1EA",
+          "background-dark": "#0D0D0D",
+          navy: "#0A0A23",
+        },
+        fontFamily: {
+          mono: ["'JetBrains Mono'", "monospace"],
+          display: ["'Inter'", "sans-serif"],
+        },
+        borderRadius: {
+          DEFAULT: "0px", sm: "0px", md: "0px", lg: "0px", full: "0px",
         },
       },
-    };
-  </script>
-  <style>
-    .scanline {
-      width: 100%;
-      height: 2px;
-      background: rgba(255, 95, 31, 0.1);
-      position: fixed;
-      z-index: 50;
-      pointer-events: none;
-      animation: scan 8s linear infinite;
-    }
-    @keyframes scan {
-      0%   { top: 0; }
-      100% { top: 100%; }
-    }
-  </style>
+    },
+  };
+</script>
+<style>
+  .scanline{width:100%;height:2px;background:rgba(255,95,31,0.1);position:fixed;z-index:50;pointer-events:none;animation:scan 8s linear infinite;}
+  @keyframes scan{0%{top:0}100%{top:100%}}
+  .grid-bg{background-size:40px 40px;background-image:radial-gradient(circle,currentColor 1px,transparent 1px);}
+  @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-25%)}}
+</style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-navy dark:text-white font-mono selection:bg-primary selection:text-white overflow-x-hidden">
-
 <div class="scanline"></div>
 
-<header class="sticky top-0 z-40 border-b-2 border-navy dark:border-white bg-background-light dark:bg-background-dark">
-  <div class="flex flex-wrap items-center justify-between text-[10px] font-bold uppercase tracking-tight px-4 py-2 gap-2">
-    <div class="flex items-center gap-4 flex-wrap">
-      <div class="flex items-center gap-2">
+<header class="border-b-2 border-navy dark:border-white sticky top-0 bg-background-light dark:bg-background-dark z-40">
+  <div class="flex flex-wrap items-center justify-between text-[10px] tracking-tighter uppercase px-4 py-2">
+    <div class="flex items-center gap-6">
+      <div class="font-bold flex items-center gap-2">
         <span class="bg-navy text-white dark:bg-white dark:text-black px-1">SERIAL NO:</span>
         <span class="text-primary">STARS-20260421</span>
       </div>
-      <div>TOTAL_REPOS: <span class="text-primary">12</span></div>
-      <div class="hidden md:flex items-center gap-1">
-        STATUS: <span class="animate-pulse text-green-600 ml-1">● SYSTEM_ACTIVE</span>
-      </div>
+      <div class="hidden md:block">TOTAL_REPOS: <span class="text-primary font-bold">12</span></div>
+      <div class="hidden lg:block">STATUS: <span class="animate-pulse text-green-600">&#9679; SYSTEM_ACTIVE</span></div>
     </div>
-    <div class="hidden sm:block opacity-70">UPDATED: 2026-04-21 06:00 UTC</div>
+    <div class="opacity-70">UPDATED: 2026-04-21 06:00 UTC</div>
   </div>
 </header>
 
-<div class="flex flex-col md:flex-row min-h-screen">
+<main>
 
-  <nav class="w-full md:w-60 border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white flex-shrink-0 md:sticky md:top-[41px] md:self-start md:max-h-[calc(100vh-41px)] md:overflow-y-auto">
-    <div class="px-4 py-2 bg-navy text-white dark:bg-white dark:text-black text-[10px] font-bold uppercase tracking-tight border-b-2 border-navy dark:border-white">
-      INDEX // CATEGORIES
+<section class="relative min-h-[90vh] border-b-2 border-navy dark:border-white overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-10 pointer-events-none"></div>
+  <div class="absolute left-0 top-0 bottom-0 w-12 border-r-2 border-navy dark:border-white flex flex-col justify-between py-8 items-center text-[10px] [writing-mode:vertical-lr] uppercase tracking-widest font-bold">
+    <span>THERUSTYROBOT // GITHUB STARS // AI-CATEGORIZED</span>
+    <span class="text-primary">EST. 2024 // VER: 1.0.0</span>
+  </div>
+  <div class="ml-12 p-8 md:p-16 flex flex-col justify-center h-full gap-8">
+    <div class="bg-primary text-white p-2 md:p-4 inline-block max-w-fit mb-4">
+      <div class="border-2 border-white/30 p-1 flex items-center gap-4">
+        <span class="material-icons text-4xl">star</span>
+        <div>
+          <p class="text-2xl font-bold leading-none">STARS CATALOG</p>
+          <p class="text-[10px] tracking-widest opacity-80">AI-GENERATED CLASSIFICATION // REF: GH-STARS</p>
+        </div>
+      </div>
     </div>
-    <a href="#ai-ml" class="flex items-center justify-between gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
-      <div class="flex items-center gap-2"><span class="text-primary">01</span><span>🤖 AI &amp; ML</span></div>
-      <span class="opacity-60">4</span>
-    </a>
-    <a href="#self-hosting" class="flex items-center justify-between gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
-      <div class="flex items-center gap-2"><span class="text-primary">02</span><span>🏠 SELF-HOSTING</span></div>
-      <span class="opacity-60">2</span>
-    </a>
-    <a href="#dev-tools" class="flex items-center justify-between gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
-      <div class="flex items-center gap-2"><span class="text-primary">03</span><span>🛠️ DEV TOOLS &amp; CLI</span></div>
-      <span class="opacity-60">2</span>
-    </a>
-    <a href="#languages-runtimes" class="flex items-center justify-between gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
-      <div class="flex items-center gap-2"><span class="text-primary">04</span><span>💻 LANGUAGES &amp; RUNTIMES</span></div>
-      <span class="opacity-60">2</span>
-    </a>
-    <a href="#learning-reference" class="flex items-center justify-between gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
-      <div class="flex items-center gap-2"><span class="text-primary">05</span><span>📚 LEARNING &amp; REFERENCE</span></div>
-      <span class="opacity-60">1</span>
-    </a>
-    <a href="#devops-infra" class="flex items-center justify-between gap-2 px-4 py-2 min-h-[44px] text-[10px] font-bold uppercase tracking-tight hover:bg-primary hover:text-white transition-colors border-b border-navy/20 dark:border-white/20">
-      <div class="flex items-center gap-2"><span class="text-primary">06</span><span>⚙️ DEVOPS &amp; INFRA</span></div>
-      <span class="opacity-60">1</span>
-    </a>
-  </nav>
-
-  <main class="flex-1">
-
-    <!-- AI & ML -->
-    <section id="ai-ml">
-      <div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-        <span>🤖 AI &amp; ML</span>
-        <span class="text-primary">ENTRIES: 4</span>
+    <h1 class="text-[5rem] md:text-[10rem] lg:text-[14rem] font-display font-bold leading-[0.85] tracking-tighter uppercase">
+      STARS<span class="text-primary">.</span>
+    </h1>
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mt-4">
+      <div class="max-w-xl">
+        <p class="text-2xl font-bold uppercase leading-none mb-4">AI-CATEGORIZED<br/><span class="text-primary">GITHUB STARS</span></p>
+        <p class="text-sm opacity-70 max-w-md">Automatically categorized via GitHub Models. Updated daily. All repos starred by therustyrobot.</p>
       </div>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">anthropics/claude-code</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 12.4K</span>
+      <div class="flex flex-col gap-2 items-start md:items-end">
+        <div class="flex border-2 border-navy dark:border-white">
+          <div class="px-4 py-2 border-r-2 border-navy dark:border-white font-bold text-sm">TOTAL: 12</div>
+          <div class="px-4 py-2 font-bold bg-navy text-white dark:bg-white dark:text-navy uppercase text-sm">Active</div>
         </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Claude Code is an agentic coding tool that lives in your terminal.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #2B7489;"></span>TypeScript
-        </span>
-      </article>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">microsoft/autogen</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 42K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">A framework for building multi-agent AI applications.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #3572A5;"></span>Python
-        </span>
-      </article>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/BerriAI/litellm" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">BerriAI/litellm</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 21K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">LLM API proxy supporting 100+ models with a unified interface.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #3572A5;"></span>Python
-        </span>
-      </article>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/continuedev/continue" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">continuedev/continue</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 24K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Open-source VS Code / JetBrains coding assistant.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #2B7489;"></span>TypeScript
-        </span>
-      </article>
-    </section>
-
-    <!-- Self-Hosting -->
-    <section id="self-hosting">
-      <div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-        <span>🏠 SELF-HOSTING</span>
-        <span class="text-primary">ENTRIES: 2</span>
+        <div class="text-[10px] opacity-50 uppercase">AI model: github-models<br/>Categories: 6</div>
       </div>
+    </div>
+  </div>
+  <div class="absolute bottom-10 right-10 w-32 h-32 opacity-20 hidden lg:block">
+    <div class="absolute top-1/2 left-0 right-0 h-px bg-current"></div>
+    <div class="absolute top-0 bottom-0 left-1/2 w-px bg-current"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-current w-16 h-16"></div>
+  </div>
+</section>
 
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">ollama/ollama</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 162K</span>
+<section class="grid grid-cols-1 md:grid-cols-3 border-b-2 border-navy dark:border-white">
+  <div class="p-8 border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white bg-navy text-white dark:bg-white dark:text-navy">
+    <div class="flex justify-between items-start mb-12">
+      <h2 class="text-2xl font-bold uppercase leading-none">CATALOG<br/>DATA_REF</h2>
+      <span class="material-icons text-4xl">folder_special</span>
+    </div>
+    <div class="space-y-6 text-sm uppercase font-bold tracking-tight">
+      <div class="border-b border-white/20 pb-2 flex justify-between"><span>TOTAL_REPOS</span><span class="text-primary">12</span></div>
+      <div class="border-b border-white/20 pb-2 flex justify-between"><span>CATEGORIES</span><span class="text-primary">6</span></div>
+      <div class="border-b border-white/20 pb-2 flex justify-between"><span>LAST_SCAN</span><span>2026-04-21</span></div>
+      <div class="border-b border-white/20 pb-2 flex justify-between"><span>AI_MODEL</span><span>GPT-4O-MINI</span></div>
+    </div>
+    <div class="mt-12 text-[10px] leading-tight opacity-60">* CATEGORIES GENERATED BY AI. DATA SOURCED FROM GITHUB API. REGENERATED DAILY.</div>
+  </div>
+  <div class="col-span-2 p-8 md:p-12">
+    <div class="flex items-center gap-4 mb-8">
+      <div class="h-px bg-navy dark:bg-white flex-1"></div>
+      <span class="text-[10px] font-bold uppercase tracking-widest">Archive Index</span>
+      <div class="h-px bg-navy dark:bg-white flex-1"></div>
+    </div>
+    <h3 class="text-[48px] font-bold uppercase leading-none mb-8">BROWSING <span class="bg-primary text-white px-2">12 STARRED</span> REPOSITORIES.</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+      <p class="leading-tight opacity-70">Starred repos auto-classified into thematic categories using GitHub Models AI. Browse by category below.</p>
+      <ul class="space-y-2 uppercase list-none font-bold">
+        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary flex-shrink-0"></span> AI &amp; ML &mdash; 4 repos</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary flex-shrink-0"></span> Self-Hosting &mdash; 2 repos</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary flex-shrink-0"></span> Dev Tools &amp; CLI &mdash; 2 repos</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary flex-shrink-0"></span> Languages &amp; Runtimes &mdash; 2 repos</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary flex-shrink-0"></span> Learning &amp; Reference &mdash; 1 repo</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 bg-primary flex-shrink-0"></span> DevOps &amp; Infra &mdash; 1 repo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="ai-ml" class="border-b-2 border-navy dark:border-white">
+  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
+    <span>AI_&amp;_ML // CATEGORY_01</span>
+    <span class="text-primary">TOTAL_ENTRIES: 4</span>
+  </div>
+  <div class="divide-y-2 divide-navy dark:divide-white">
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #001</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">anthropics/<br/>claude-code</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#2B7489"></span>TypeScript</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 12.4K</span>
+          </div>
         </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Run large language models locally.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #00ADD8;"></span>Go
-        </span>
-      </article>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/netdata/netdata" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">netdata/netdata</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 75K</span>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_4px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_4px)] opacity-50"></div>
         </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Real-time infrastructure monitoring, built for production.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #555555;"></span>C
-        </span>
-      </article>
-    </section>
-
-    <!-- Dev Tools & CLI -->
-    <section id="dev-tools">
-      <div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-        <span>🛠️ DEV TOOLS &amp; CLI</span>
-        <span class="text-primary">ENTRIES: 2</span>
       </div>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/sharkdp/bat" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">sharkdp/bat</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 55K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">A cat clone with syntax highlighting and Git integration.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #DEA584;"></span>Rust
-        </span>
-      </article>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/neovim/neovim" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">neovim/neovim</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 88K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Vim-fork focused on extensibility and usability.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #555555;"></span>C
-        </span>
-      </article>
-    </section>
-
-    <!-- Languages & Runtimes -->
-    <section id="languages-runtimes">
-      <div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-        <span>💻 LANGUAGES &amp; RUNTIMES</span>
-        <span class="text-primary">ENTRIES: 2</span>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Claude Code is an agentic coding tool that lives in your terminal, enabling Claude to edit files, run commands, search code, and perform complex engineering tasks end-to-end.</p>
+        <a href="https://github.com/anthropics/claude-code" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
       </div>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/golang/go" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">golang/go</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 125K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">The Go programming language.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #00ADD8;"></span>Go
-        </span>
-      </article>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/rust-lang/rust" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">rust-lang/rust</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 102K</span>
-        </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Empowering everyone to build reliable and efficient software.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #DEA584;"></span>Rust
-        </span>
-      </article>
-    </section>
-
-    <!-- Learning & Reference -->
-    <section id="learning-reference">
-      <div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-        <span>📚 LEARNING &amp; REFERENCE</span>
-        <span class="text-primary">ENTRIES: 1</span>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
       </div>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">sindresorhus/awesome</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 350K</span>
+    </div>
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #002</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">microsoft/<br/>autogen</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#3572A5"></span>Python</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 42K</span>
+          </div>
         </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Awesome lists about all kinds of interesting topics.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5 opacity-40">—</span>
-      </article>
-    </section>
-
-    <!-- DevOps & Infra -->
-    <section id="devops-infra">
-      <div class="px-4 py-2 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-        <span>⚙️ DEVOPS &amp; INFRA</span>
-        <span class="text-primary">ENTRIES: 1</span>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_2px,transparent_2px,transparent_8px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_2px,transparent_2px,transparent_8px)] opacity-50"></div>
+        </div>
       </div>
-
-      <article class="border-b-2 border-navy dark:border-white px-4 py-4 hover:bg-zinc-900/5 dark:hover:bg-zinc-800/30 transition-colors">
-        <div class="flex justify-between items-start gap-4 mb-2">
-          <a href="https://github.com/caddyserver/caddy" target="_blank" rel="noopener noreferrer" class="text-sm font-bold uppercase hover:text-primary transition-colors leading-tight">caddyserver/caddy</a>
-          <span class="text-[10px] font-bold text-primary whitespace-nowrap flex-shrink-0">★ 62K</span>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">A framework for building multi-agent AI applications. Enables diverse agent types and interaction patterns, from simple two-agent chats to complex dynamic workflows.</p>
+        <a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #003</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">BerriAI/<br/>litellm</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#3572A5"></span>Python</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 21K</span>
+          </div>
         </div>
-        <p class="text-sm opacity-70 mb-2 leading-relaxed">Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS.</p>
-        <span class="inline-flex items-center gap-1 text-[10px] font-bold uppercase border border-current px-1 py-0.5">
-          <span class="w-2 h-2 flex-shrink-0" style="background-color: #00ADD8;"></span>Go
-        </span>
-      </article>
-    </section>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_3px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_3px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">LLM API proxy supporting 100+ models with a unified interface. Use OpenAI format for Bedrock, Azure, Mistral, and 100+ LLMs. Retry/fallback logic, cost tracking, and streaming.</p>
+        <a href="https://github.com/BerriAI/litellm" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #004</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">continuedev/<br/>continue</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#2B7489"></span>TypeScript</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 24K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_3px,transparent_3px,transparent_9px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_3px,transparent_3px,transparent_9px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Open-source VS Code and JetBrains coding assistant. Use any AI model to complete code, refactor, and understand large codebases.</p>
+        <a href="https://github.com/continuedev/continue" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  </main>
+<section id="self-hosting" class="border-b-2 border-navy dark:border-white">
+  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
+    <span>SELF_HOSTING // CATEGORY_02</span>
+    <span class="text-primary">TOTAL_ENTRIES: 2</span>
+  </div>
+  <div class="divide-y-2 divide-navy dark:divide-white">
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #005</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">ollama/<br/>ollama</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#00ADD8"></span>Go</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 162K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_4px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_4px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Run large language models locally. Get up and running with Llama 3, Mistral, Gemma, and other models in minutes with a simple CLI and REST API.</p>
+        <a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #006</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">netdata/<br/>netdata</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#555555"></span>C</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 75K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_2px,transparent_2px,transparent_6px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_2px,transparent_2px,transparent_6px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Real-time infrastructure monitoring built for production. Visualize your full stack across bare metal, VMs, containers, and Kubernetes.</p>
+        <a href="https://github.com/netdata/netdata" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dev-tools" class="border-b-2 border-navy dark:border-white">
+  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
+    <span>DEV_TOOLS_&amp;_CLI // CATEGORY_03</span>
+    <span class="text-primary">TOTAL_ENTRIES: 2</span>
+  </div>
+  <div class="divide-y-2 divide-navy dark:divide-white">
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #007</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">sharkdp/<br/>bat</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#DEA584"></span>Rust</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 55K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_5px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_5px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">A cat clone with syntax highlighting and Git integration. Supports automatic paging, showing Git modifications, and many output formats.</p>
+        <a href="https://github.com/sharkdp/bat" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #008</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">neovim/<br/>neovim</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#555555"></span>C</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 88K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_2px,transparent_2px,transparent_4px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_2px,transparent_2px,transparent_4px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Vim-fork focused on extensibility and usability. Tightly coupled with Neovim's extensive Lua API, tree-sitter, and native LSP support.</p>
+        <a href="https://github.com/neovim/neovim" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="languages-runtimes" class="border-b-2 border-navy dark:border-white">
+  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
+    <span>LANGUAGES_&amp;_RUNTIMES // CATEGORY_04</span>
+    <span class="text-primary">TOTAL_ENTRIES: 2</span>
+  </div>
+  <div class="divide-y-2 divide-navy dark:divide-white">
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #009</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">golang/<br/>go</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#00ADD8"></span>Go</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 125K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_4px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_4px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">The Go programming language. Makes it easy to build simple, reliable, and efficient software with built-in concurrency primitives and a fast compiler.</p>
+        <a href="https://github.com/golang/go" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #010</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">rust-lang/<br/>rust</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#DEA584"></span>Rust</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 102K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_3px,transparent_3px,transparent_7px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_3px,transparent_3px,transparent_7px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Empowering everyone to build reliable and efficient software with memory safety guarantees and zero-cost abstractions.</p>
+        <a href="https://github.com/rust-lang/rust" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="learning-reference" class="border-b-2 border-navy dark:border-white">
+  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
+    <span>LEARNING_&amp;_REFERENCE // CATEGORY_05</span>
+    <span class="text-primary">TOTAL_ENTRIES: 1</span>
+  </div>
+  <div class="divide-y-2 divide-navy dark:divide-white">
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #011</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">sindresorhus/<br/>awesome</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold opacity-40">&mdash;</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 350K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_2px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_2px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Awesome lists about all kinds of interesting topics. The starting point for finding anything interesting in the open-source ecosystem.</p>
+        <a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="devops-infra" class="border-b-2 border-navy dark:border-white">
+  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
+    <span>DEVOPS_&amp;_INFRA // CATEGORY_06</span>
+    <span class="text-primary">TOTAL_ENTRIES: 1</span>
+  </div>
+  <div class="divide-y-2 divide-navy dark:divide-white">
+    <div class="group flex flex-col md:flex-row">
+      <div class="w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white">
+        <div>
+          <div class="text-[10px] font-bold text-primary mb-2">FILE: #012</div>
+          <h3 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">caddyserver/<br/>caddy</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="border border-navy dark:border-white px-2 py-0.5 text-[10px] font-bold flex items-center gap-1"><span class="w-2 h-2 flex-shrink-0" style="background:#00ADD8"></span>Go</span>
+            <span class="bg-primary text-white px-2 py-0.5 text-[10px] font-bold">&#9733; 62K</span>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="bg-navy text-white dark:bg-white dark:text-navy px-2 py-1 inline-block text-[10px] font-bold mb-2">METADATA</div>
+          <div class="h-8 bg-[repeating-linear-gradient(90deg,#000,#000_4px,transparent_4px,transparent_10px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_4px,transparent_4px,transparent_10px)] opacity-50"></div>
+        </div>
+      </div>
+      <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
+        <p class="text-sm opacity-70 leading-relaxed">Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS. Powers millions of sites with zero-config TLS and a powerful plugin system.</p>
+        <a href="https://github.com/caddyserver/caddy" target="_blank" rel="noopener noreferrer"
+           class="mt-8 self-start border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
+      </div>
+      <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
+        <span class="material-icons rotate-45 text-2xl">arrow_forward</span>
+        <div class="[writing-mode:vertical-lr] text-[10px] font-bold uppercase">View Repo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bg-primary py-3 border-b-2 border-navy dark:border-white overflow-hidden whitespace-nowrap">
+  <div class="flex items-center gap-12 text-white font-bold text-2xl animate-[marquee_20s_linear_infinite]">
+    <span class="uppercase">AI &amp; ML // SELF-HOSTING // DEV TOOLS // LANGUAGES // LEARNING // DEVOPS // </span>
+    <span class="uppercase">AI &amp; ML // SELF-HOSTING // DEV TOOLS // LANGUAGES // LEARNING // DEVOPS // </span>
+    <span class="uppercase">AI &amp; ML // SELF-HOSTING // DEV TOOLS // LANGUAGES // LEARNING // DEVOPS // </span>
+    <span class="uppercase">AI &amp; ML // SELF-HOSTING // DEV TOOLS // LANGUAGES // LEARNING // DEVOPS // </span>
+  </div>
 </div>
 
-<footer class="border-t-2 border-navy dark:border-white px-4 py-4">
+</main>
+
+<footer class="p-4 border-t-2 border-navy dark:border-white">
   <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase opacity-60">
-    <div>STARS_GALLERY // AUTO-GENERATED // ALL DATA FROM GITHUB API</div>
-    <div class="flex gap-4">
-      <span>BUILD_V_1.0</span>
-      <span>SYSTEM_STATUS: OK</span>
-    </div>
+    <div>STARS_GALLERY // AUTO-GENERATED // DATA FROM GITHUB API</div>
+    <div class="flex gap-4"><span>BUILD_V_1.0</span><span>SYSTEM_STATUS: OK</span></div>
   </div>
 </footer>
 
