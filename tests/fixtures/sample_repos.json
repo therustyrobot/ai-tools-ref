@@ -1,0 +1,42 @@
+[
+  {
+    "full_name": "torvalds/linux",
+    "name": "linux",
+    "html_url": "https://github.com/torvalds/linux",
+    "description": "Linux kernel source tree",
+    "language": "C",
+    "stargazers_count": 185000
+  },
+  {
+    "full_name": "microsoft/vscode",
+    "name": "vscode",
+    "html_url": "https://github.com/microsoft/vscode",
+    "description": "Visual Studio Code — open source editor",
+    "language": "TypeScript",
+    "stargazers_count": 162000
+  },
+  {
+    "full_name": "golang/go",
+    "name": "go",
+    "html_url": "https://github.com/golang/go",
+    "description": "The Go programming language",
+    "language": "Go",
+    "stargazers_count": 125000
+  },
+  {
+    "full_name": "neovim/neovim",
+    "name": "neovim",
+    "html_url": "https://github.com/neovim/neovim",
+    "description": "Vim-fork focused on extensibility & usability — has <special> chars & ampersands",
+    "language": "C",
+    "stargazers_count": 82000
+  },
+  {
+    "full_name": "psf/requests",
+    "name": "requests",
+    "html_url": "https://github.com/psf/requests",
+    "description": "A simple, yet elegant, HTTP library for Python",
+    "language": "Python",
+    "stargazers_count": 52000
+  }
+]
