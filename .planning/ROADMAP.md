@@ -56,7 +56,12 @@ Plans:
 5. The category navigation (sidebar or inline) lists all sections with anchor links that scroll to the correct section on click
 6. The `_data/` directory is not committed — only `docs/index.html` changes in git
 
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — `scripts/fetch_stars.py` + unit tests (pagination, filter, schema)
+- [ ] 02-02-PLAN.md — `scripts/generate.py` + HTML generation (language grouping, sidebar nav, card rendering)
+
 **UI hint**: yes
 
 ---
@@ -104,7 +109,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Static Shell + GitHub Pages Live | 2/2 | Not started | — |
-| 2. Live Data Pipeline (no AI) | 0/? | Not started | — |
+| 2. Live Data Pipeline (no AI) | 0/2 | Planned | — |
 | 3. AI Categorization | 0/? | Not started | — |
 | 4. Automated Daily Action | 0/? | Not started | — |
 

@@ -20,7 +20,7 @@ See: `.planning/PROJECT.md` (updated 2026-04-21)
 | Phase | Title | Status |
 |-------|-------|--------|
 | 1 | Static Shell + Pages Live | ⬜ Not started |
-| 2 | Live Data Pipeline (no AI) | ⬜ Not started |
+| 2 | Live Data Pipeline (no AI) | 🟡 Planned |
 | 3 | AI Categorization | ⬜ Not started |
 | 4 | Automated Daily Action | ⬜ Not started |
 
