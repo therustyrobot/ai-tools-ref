@@ -38,14 +38,14 @@ created: 2026-04-22
 
 | Task ID | Plan | Wave | Requirement | Threat Ref | Secure Behavior | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|------------|-----------------|-----------|-------------------|-------------|--------|
-| categorize-01 | 03-01 | 0 | AI-01 | — | Bearer token not logged/leaked | unit | `pytest tests/test_categorize.py::TestCategorizeApi -x` | ❌ W0 | ⬜ pending |
-| categorize-02 | 03-01 | 0 | AI-02 | — | N/A | unit | `pytest tests/test_categorize.py::TestBatching -x` | ❌ W0 | ⬜ pending |
-| categorize-03 | 03-01 | 0 | AI-03 | — | N/A | unit | `pytest tests/test_categorize.py::TestSystemPrompt -x` | ❌ W0 | ⬜ pending |
+| categorize-01 | 03-01 | 0 | AI-01 | — | Bearer token not logged/leaked | unit | `pytest tests/test_categorize.py::TestCallModel -x` | ❌ W0 | ⬜ pending |
+| categorize-02 | 03-01 | 0 | AI-02 | — | N/A | unit | `pytest tests/test_categorize.py::TestCategorizeAll -x` | ❌ W0 | ⬜ pending |
+| categorize-03 | 03-01 | 0 | AI-03 | — | N/A | unit | `pytest tests/test_categorize.py::TestBuildMessages -x` | ❌ W0 | ⬜ pending |
 | categorize-04 | 03-01 | 0 | AI-04 | — | N/A | unit | `pytest tests/test_categorize.py::TestParseWithRetry -x` | ❌ W0 | ⬜ pending |
 | categorize-05 | 03-01 | 0 | AI-05 | — | N/A | unit | `pytest tests/test_categorize.py::TestCategoryToSlug -x` | ❌ W0 | ⬜ pending |
-| generate-01 | 03-02 | 0 | D-01 | — | N/A | unit | `pytest tests/test_generate.py::TestHierarchicalRendering -x` | ❌ W0 | ⬜ pending |
+| generate-01 | 03-02 | 0 | D-01 | — | N/A | unit | `pytest tests/test_generate.py::TestRenderSectionsHierarchical -x` | ❌ W0 | ⬜ pending |
 | generate-02 | 03-02 | 0 | D-02 | — | N/A | unit | `pytest tests/test_generate.py::TestRenderSubcategoryHeader -x` | ❌ W0 | ⬜ pending |
-| generate-03 | 03-02 | 0 | D-04 | — | N/A | unit | `pytest tests/test_generate.py::TestGroupByHierarchical -x` | ❌ W0 | ⬜ pending |
+| generate-03 | 03-02 | 0 | D-04 | — | N/A | unit | `pytest tests/test_generate.py::TestGroupByCategoriesHierarchical -x` | ❌ W0 | ⬜ pending |
 | generate-04 | 03-02 | 0 | D-06 | — | N/A | unit | `pytest tests/test_generate.py::TestCategoryMetaLookup -x` | ❌ W0 | ⬜ pending |
 | regression-01 | 03-02 | 1 | Fallback | — | N/A | regression | `pytest tests/test_generate.py::TestOutputFileCreated -x` | ✅ exists | ⬜ pending |
 
