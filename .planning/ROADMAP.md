@@ -81,7 +81,11 @@ Plans:
 4. The workflow logs a parse-error message and retries when the model returns malformed JSON — and the pipeline still completes successfully on the retry
 5. Total API calls to GitHub Models per full run does not exceed 40 (verified in Action logs), confirming the 10-repo batch size is respected
 
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — `scripts/categorize.py` + `tests/test_categorize.py` (GitHub Models API, batch 10, retry, categories.json output)
+- [ ] 03-02-PLAN.md — `scripts/generate.py` hierarchical upgrade + `tests/test_generate.py` additions (CATEGORY_META, subcategory headers, hierarchical grouping/rendering)
 
 ---
 
