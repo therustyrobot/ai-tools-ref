@@ -3,31 +3,31 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-last_updated: "2026-04-22T18:29:50.567Z"
+last_updated: "2026-04-23T00:57:26.534Z"
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
-  percent: 100
+  total_plans: 6
+  completed_plans: 5
+  percent: 83
 ---
 
 # Project State
 
-**Last updated:** 2026-04-22T18:29:05Z — Completed 02-02-PLAN.md
+**Last updated:** 2026-04-23T00:58:00Z — Completed 03-01-PLAN.md
 
 ## Project Reference
 
 See: `.planning/PROJECT.md` (updated 2026-04-21)
 
 **Core value:** Every starred repo is surfaced in a browsable, visually distinctive page that updates itself daily — zero maintenance after setup.
-**Current focus:** Phase 2 complete — all 4 plans done. Ready for Phase 3 (AI Categorization).
+**Current focus:** Phase 3 in progress — 03-01 complete (categorize.py pipeline), 03-02 pending (generate.py hierarchical rendering).
 
 ## Current Status
 
 **Milestone:** v1 — Initial Release
-**Active phase:** Phase 2 complete (2/4 phases done)
-**Next action:** `/gsd-plan-phase 3`
+**Active phase:** Phase 3 (1/2 plans done)
+**Next action:** Execute 03-02-PLAN.md (generate.py hierarchical upgrade)
 
 ## Phases
 
@@ -35,7 +35,7 @@ See: `.planning/PROJECT.md` (updated 2026-04-21)
 |-------|-------|--------|
 | 1 | Static Shell + Pages Live | ✅ Complete |
 | 2 | Live Data Pipeline (no AI) | ✅ Complete |
-| 3 | AI Categorization | ⬜ Not started |
+| 3 | AI Categorization | 🔄 In Progress (1/2) |
 | 4 | Automated Daily Action | ⬜ Not started |
 
 ## Key Decisions
@@ -49,6 +49,9 @@ See: `.planning/PROJECT.md` (updated 2026-04-21)
 - **Static HTML only** — Tailwind CDN, no build step, no framework
 - **Grouped by language (not categories)** — group_by_categories() available for Phase 3 AI categorization
 - **Zero templating dependencies** — pure Python f-strings in generate.py, no Jinja2/Mako
+- **Slug derivation in Python** — `category_to_slug()` derives slug from canonical name; model output slug field ignored (AI-05)
+- **Bearer auth for GitHub Models API** — `Authorization: Bearer $GITHUB_TOKEN` (not `token ` prefix used by REST API)
+- **parse_with_retry()** — `[WARN]` + 1 retry on JSONDecodeError; `[ERROR]` + Other fallback on 2nd failure (AI-04)
 
 ## Prerequisite (Blocking)
 
