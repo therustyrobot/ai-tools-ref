@@ -49,6 +49,24 @@ LANG_META = {
     "other":      ("Other",            "📦", "#888888"),
 }
 
+CATEGORY_META = {
+    # slug: (display_name, material_icon_name)  — 2-tuple, NOT 3-tuple like LANG_META
+    "ai-ml":                ("AI & ML",                "smart_toy"),
+    "self-hosting-homelab": ("Self-Hosting & Homelab", "dns"),
+    "dev-tools-cli":        ("Dev Tools & CLI",        "terminal"),
+    "devops-infra":         ("DevOps & Infra",         "cloud"),
+    "security":             ("Security",               "lock"),
+    "web-frontend":         ("Web & Frontend",         "web"),
+    "data-analytics":       ("Data & Analytics",       "bar_chart"),
+    "productivity-notes":   ("Productivity & Notes",   "edit_note"),
+    "media-entertainment":  ("Media & Entertainment",  "movie"),
+    "networking":           ("Networking",             "router"),
+    "mobile-desktop":       ("Mobile & Desktop",       "devices"),
+    "awesome-lists":        ("Awesome Lists",          "star"),
+    "esp32-hardware":       ("ESP32 & Hardware",       "developer_board"),
+    "other":                ("Other",                  "category"),
+}
+
 BARCODE_STYLES = [
     "bg-[repeating-linear-gradient(90deg,#000,#000_1px,transparent_1px,transparent_4px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_1px,transparent_1px,transparent_4px)]",
     "bg-[repeating-linear-gradient(90deg,#000,#000_2px,transparent_2px,transparent_8px)] dark:bg-[repeating-linear-gradient(90deg,#fff,#fff_2px,transparent_2px,transparent_8px)]",
@@ -109,11 +127,14 @@ def load_repos(path="_data/repos.json"):
 
 
 def load_categories(path="_data/categories.json"):
-    """Load optional categories map. Returns empty dict if file absent."""
+    """Load optional categories map. Returns empty dict if file absent or malformed."""
     if not os.path.exists(path):
         return {}
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        return {}
 
 
 # ---------------------------------------------------------------------------
@@ -147,6 +168,37 @@ def group_by_categories(repos, cat_map):
     return dict(
         sorted(groups.items(), key=lambda kv: sum(r.get("stargazers_count") or 0 for r in kv[1]), reverse=True)
     )
+
+
+def group_by_categories_hierarchical(repos, cat_map):
+    """Group repos into nested {category: {subcategory: [repos]}} structure.
+
+    Repos missing from cat_map fall to 'Other' > 'Other'.
+    Each subcategory list is sorted by stars descending (HTML-07).
+    Top-level categories ordered by total star count descending.
+    """
+    hier = defaultdict(lambda: defaultdict(list))
+    for repo in repos:
+        info = cat_map.get(repo["full_name"], {})
+        cat = info.get("category", "Other")
+        subcat = info.get("subcategory", "Other")
+        hier[cat][subcat].append(repo)
+    for cat in hier:
+        for subcat in hier[cat]:
+            hier[cat][subcat].sort(
+                key=lambda r: r.get("stargazers_count") or 0, reverse=True
+            )
+
+    def cat_total(cat_name):
+        return sum(
+            r.get("stargazers_count") or 0
+            for repos_list in hier[cat_name].values()
+            for r in repos_list
+        )
+    return {
+        cat: dict(hier[cat])
+        for cat in sorted(hier, key=cat_total, reverse=True)
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -196,7 +248,13 @@ def render_card(repo, index, global_index):
 def render_section(cat_name, repos, cat_num, global_offset):
     """Render a full category section including header and all cards."""
     slug = language_to_slug(cat_name)
-    display_name, emoji, _ = LANG_META.get(slug, (cat_name, "📦", "#888888"))
+    # D-06: CATEGORY_META first, then LANG_META, then fallback
+    if slug in CATEGORY_META:
+        display_name, icon_name = CATEGORY_META[slug]
+        icon_html = f'<span class="material-icons text-lg">{icon_name}</span>'
+    else:
+        display_name, emoji, _ = LANG_META.get(slug, (cat_name, "📦", "#888888"))
+        icon_html = f'<span class="text-lg">{emoji}</span>'
     count = len(repos)
     cards = "\n".join(render_card(r, i, global_offset + i) for i, r in enumerate(repos))
     return f"""\
@@ -204,7 +262,7 @@ def render_section(cat_name, repos, cat_num, global_offset):
   <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center
               bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
     <span class="flex items-center gap-3">
-      <span class="text-lg">{emoji}</span>
+      {icon_html}
       <span>{html.escape(display_name.upper())} // CATEGORY_{cat_num:02d}</span>
     </span>
     <span class="text-primary">TOTAL_ENTRIES: {count}</span>
@@ -223,6 +281,73 @@ def render_sections(groups):
         parts.append(render_section(cat_name, repos, cat_num, global_offset))
         global_offset += len(repos)
     return "\n".join(parts)
+
+
+def render_subcategory_header(subcat_name, count, subcat_num):
+    """Render a Safety Orange subcategory divider with inline repo count (D-02)."""
+    slug = language_to_slug(subcat_name)
+    safe_name = html.escape(subcat_name.upper())
+    return (
+        f'<div id="{slug}" data-subcategory="{slug}" '
+        f'class="px-8 py-3 flex justify-between items-center '
+        f'bg-[#FF5F1F] text-white font-bold text-[10px] uppercase">'
+        f'  <span>{safe_name} // SUB_{subcat_num:02d}</span>'
+        f'  <span>ENTRIES: {count}</span>'
+        f'</div>'
+    )
+
+
+def render_sections_hierarchical(hier_groups):
+    """Render all category sections with nested subcategory dividers (D-01).
+
+    Structure per category:
+      <section id="{cat_slug}"> category header (gray, Material Icon)
+        <div divide-y-2>
+          render_subcategory_header() [Safety Orange]
+          render_card() * N
+          render_subcategory_header() [Safety Orange]
+          render_card() * M
+        </div>
+      </section>
+    """
+    parts = []
+    global_offset = 0
+    for cat_num, (cat_name, subcats) in enumerate(hier_groups.items(), start=1):
+        slug = language_to_slug(cat_name)
+        total_count = sum(len(r) for r in subcats.values())
+
+        # D-06: CATEGORY_META first, then LANG_META, then fallback
+        if slug in CATEGORY_META:
+            display_name, icon_name = CATEGORY_META[slug]
+            icon_html = f'<span class="material-icons text-lg">{icon_name}</span>'
+        else:
+            display_name, emoji, _ = LANG_META.get(slug, (cat_name, "📦", "#888888"))
+            icon_html = f'<span class="text-lg">{emoji}</span>'
+
+        section_lines = [
+            f'<section id="{slug}" data-category="{slug}" class="border-b-2 border-navy dark:border-white">',
+            f'  <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center',
+            f'              bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">',
+            f'    <span class="flex items-center gap-3">',
+            f'      {icon_html}',
+            f'      <span>{html.escape(display_name.upper())} // CATEGORY_{cat_num:02d}</span>',
+            f'    </span>',
+            f'    <span class="text-primary">TOTAL_ENTRIES: {total_count}</span>',
+            f'  </div>',
+            f'  <div class="divide-y-2 divide-navy dark:divide-white">',
+        ]
+
+        for subcat_num, (subcat_name, repos) in enumerate(subcats.items(), start=1):
+            section_lines.append(render_subcategory_header(subcat_name, len(repos), subcat_num))
+            for i, repo in enumerate(repos):
+                section_lines.append(render_card(repo, i, global_offset + i))
+            global_offset += len(repos)
+
+        section_lines.append('  </div>')
+        section_lines.append('</section>')
+        parts.append('\n'.join(section_lines))
+
+    return '\n'.join(parts)
 
 
 def render_nav(groups):
@@ -246,6 +371,34 @@ def render_nav(groups):
             </a>
           </li>""")
     return "\n".join(items)
+
+
+def render_nav_hierarchical(hier_groups):
+    """Render sidebar nav for hierarchical groups — top-level categories only (D-03)."""
+    items = []
+    for cat_name, subcats in hier_groups.items():
+        slug = language_to_slug(cat_name)
+        total_count = sum(len(repos) for repos in subcats.values())
+        if slug in CATEGORY_META:
+            display_name, icon_name = CATEGORY_META[slug]
+            icon_html = f'<span class="material-icons text-sm opacity-60">{icon_name}</span>'
+        else:
+            display_name = cat_name
+            icon_html = '<span class="opacity-60">📦</span>'
+        items.append(f"""\
+          <li>
+            <a href="#{slug}" class="flex items-center justify-between px-3 py-2 text-[10px] font-bold uppercase
+               hover:bg-primary hover:text-white transition-colors border-b border-navy/10 dark:border-white/10
+               group">
+              <span class="flex items-center gap-2">
+                {icon_html}
+                <span>{html.escape(display_name)}</span>
+              </span>
+              <span class="bg-navy text-white dark:bg-white dark:text-navy px-1.5 py-0.5 text-[9px] font-bold
+                           group-hover:bg-white group-hover:text-primary">{total_count}</span>
+            </a>
+          </li>""")
+    return '\n'.join(items)
 
 
 def render_page(nav_html, sections_html, total, generated_at):
@@ -414,11 +567,16 @@ def render_page(nav_html, sections_html, total, generated_at):
 if __name__ == "__main__":
     repos = load_repos()
     cat_map = load_categories()
-    groups = group_by_categories(repos, cat_map) if cat_map else group_by_language(repos)
-    nav_html = render_nav(groups)
-    sections_html = render_sections(groups)
+    if cat_map:
+        hier_groups = group_by_categories_hierarchical(repos, cat_map)
+        nav_html = render_nav_hierarchical(hier_groups)
+        sections_html = render_sections_hierarchical(hier_groups)
+    else:
+        groups = group_by_language(repos)
+        nav_html = render_nav(groups)
+        sections_html = render_sections(groups)
     page = render_page(nav_html, sections_html, len(repos), datetime.datetime.utcnow())
     os.makedirs("docs", exist_ok=True)
     with open("docs/index.html", "w", encoding="utf-8") as f:
         f.write(page)
-    print(f"Generated docs/index.html: {len(repos)} repos, {len(groups)} categories")
+    print(f"Generated docs/index.html: {len(repos)} repos")
