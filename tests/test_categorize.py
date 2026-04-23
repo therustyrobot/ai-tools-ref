@@ -160,9 +160,12 @@ class TestCategorizeAll(unittest.TestCase):
         session = MagicMock()
         session.post.return_value = _mock_post_response(content)
         result = cat.categorize_all(repos, session)
-        # repo1 missing from model response — should not crash; repo0 present
+        # repo1 missing from model response — must be assigned Other/Other
         self.assertIn("owner/repo0", result)
         self.assertEqual(result["owner/repo0"]["slug"], "security")
+        self.assertIn("owner/repo1", result)
+        self.assertEqual(result["owner/repo1"]["category"], "Other")
+        self.assertEqual(result["owner/repo1"]["slug"], "other")
 
 
 class TestWriteCategories(unittest.TestCase):

@@ -211,13 +211,14 @@ def render_card(repo, index, global_index):
     owner, _, name = repo["full_name"].partition("/")
     safe_name = html.escape(name)
     safe_desc = html.escape(repo.get("description") or "No description provided.")
+    safe_url = html.escape(repo["html_url"])
     k_stars = fmt_stars(repo.get("stargazers_count"))
     lang_badge = lang_badge_html(repo.get("language"))
     barcode_style = BARCODE_STYLES[global_index % len(BARCODE_STYLES)]
 
     return f"""\
     <div class="flex flex-col md:flex-row">
-      <a href="{repo['html_url']}" target="_blank" rel="noopener noreferrer"
+      <a href="{safe_url}" target="_blank" rel="noopener noreferrer"
          class="card-left w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white bg-background-light dark:bg-background-dark">
         <div>
           <div class="file-num text-[10px] font-bold text-primary mb-2">FILE: #{global_index + 1:03d}</div>
@@ -235,7 +236,7 @@ def render_card(repo, index, global_index):
       </a>
       <div class="flex-1 p-8 bg-zinc-50 dark:bg-zinc-900 flex flex-col justify-between">
         <p class="text-sm opacity-70 leading-relaxed">{safe_desc}</p>
-        <a href="{repo['html_url']}" target="_blank" rel="noopener noreferrer"
+        <a href="{safe_url}" target="_blank" rel="noopener noreferrer"
            class="mt-8 self-start cursor-pointer border-2 border-navy dark:border-white px-4 py-2 text-[10px] font-bold uppercase hover:bg-primary hover:text-white hover:border-primary transition-colors">VIEW ON GITHUB &#8599;</a>
       </div>
       <div class="hidden lg:flex w-16 border-l-2 border-navy dark:border-white flex-col justify-center items-center gap-4 py-8">
@@ -413,9 +414,12 @@ def render_page(nav_html, sections_html, total, generated_at):
             # extract display name between <span> and </span>
             m = re.search(r"<span>([^<]+)</span>", line)
             if m:
-                marquee_parts.append(m.group(1).strip().upper())
+                # unescape HTML entities (e.g. &amp; → &) before uppercasing,
+                # then re-escape for safe HTML insertion
+                raw_name = html.unescape(m.group(1).strip())
+                marquee_parts.append(raw_name.upper())
     marquee_text = " // ".join(marquee_parts) + " // "
-    marquee_content = (marquee_text) * 4
+    marquee_content = html.escape(marquee_text * 4)
 
     return f"""<!DOCTYPE html>
 <html class="scroll-smooth" lang="en">

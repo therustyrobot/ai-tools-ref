@@ -141,6 +141,11 @@ def categorize_all(repos, session):
                 "subcategory": info.get("subcategory", "Other"),
                 "slug":        category_to_slug(info.get("category", "Other")),
             }
+        # Repos omitted from model response (valid JSON but incomplete) fall back to Other
+        for name in batch_names:
+            if name not in cat_map:
+                print(f"[WARN] Repo {name!r} missing from model response — assigning to Other")
+                cat_map[name] = {"category": "Other", "subcategory": "Other", "slug": "other"}
     return cat_map
 
 
