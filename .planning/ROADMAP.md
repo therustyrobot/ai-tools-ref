@@ -9,7 +9,7 @@
 - [ ] **Phase 1: Static Shell + GitHub Pages Live** — Stitch-themed HTML with hardcoded sample data served on the live Pages URL; proves aesthetic and hosting before any pipeline code
 - [x] **Phase 2: Live Data Pipeline (no AI)** — Python fetch + generate scripts run end-to-end; real starred repos appear in the gallery under a single "All Repos" grouping
 - [x] **Phase 3: AI Categorization** — GitHub Models batching categorizes all repos; page displays full hierarchical taxonomy with stable anchor IDs
-- [ ] **Phase 4: Automated Daily Action** — GitHub Action runs on schedule; gallery self-updates, no-change guard prevents noise commits, `[skip ci]` prevents loops
+- [x] **Phase 4: Automated Daily Action** — GitHub Action runs on schedule; gallery self-updates, no-change guard prevents noise commits, `[skip ci]` prevents loops
 
 ---
 
@@ -115,7 +115,7 @@ Plans:
 | 1. Static Shell + GitHub Pages Live | 2/2 | Not started | — |
 | 2. Live Data Pipeline (no AI) | 2/2 | ✅ Complete | 2026-04-22 |
 | 3. AI Categorization | 2/2 | ✅ Complete | 2026-04-23 |
-| 4. Automated Daily Action | 0/? | Not started | — |
+| 4. Automated Daily Action | 1/1 | ✅ Complete | 2026-04-24 |
 
 ---
 
