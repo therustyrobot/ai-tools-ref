@@ -25,6 +25,8 @@ jobs:
         run: pip install requests
 
       - name: Fetch starred repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.STARS_TOKEN }}
         run: python3 scripts/fetch_stars.py
 
       - name: Categorize repos
