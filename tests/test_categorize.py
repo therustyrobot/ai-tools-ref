@@ -35,6 +35,17 @@ def _mock_post_response(content_str):
     return resp
 
 
+def _mock_http_error_response(status_code, retry_after=None):
+    """Build a mock requests.Response that raises HTTPError on raise_for_status()."""
+    resp = MagicMock()
+    resp.status_code = status_code
+    resp.headers = {}
+    if retry_after is not None:
+        resp.headers["Retry-After"] = str(retry_after)
+    resp.raise_for_status.side_effect = cat.requests.exceptions.HTTPError(response=resp)
+    return resp
+
+
 class TestCategoryToSlug(unittest.TestCase):
     def test_known_categories(self):
         cases = [
@@ -98,6 +109,44 @@ class TestCallModel(unittest.TestCase):
         cat.call_model(session, [])
         payload = session.post.call_args[1]["json"]
         self.assertEqual(payload["response_format"], {"type": "json_object"})
+
+
+class TestRetryDelaySeconds(unittest.TestCase):
+    def test_uses_retry_after_header(self):
+        response = MagicMock()
+        response.headers = {"Retry-After": "7"}
+        self.assertEqual(cat.retry_delay_seconds(response, attempt_number=1), 7)
+
+    def test_falls_back_to_exponential_backoff(self):
+        response = MagicMock()
+        response.headers = {}
+        self.assertEqual(cat.retry_delay_seconds(response, attempt_number=3), 8)
+
+
+class TestCallModelRetries(unittest.TestCase):
+    def test_retries_429_then_succeeds(self):
+        session = MagicMock()
+        throttled = _mock_http_error_response(429, retry_after=3)
+        success = _mock_post_response("{}")
+        session.post.side_effect = [throttled, success]
+
+        with patch("time.sleep") as sleep_mock:
+            result = cat.call_model(session, [], max_retries=2)
+
+        self.assertEqual(result, "{}")
+        self.assertEqual(session.post.call_count, 2)
+        sleep_mock.assert_called_once_with(3)
+
+    def test_raises_when_retries_exhausted(self):
+        session = MagicMock()
+        throttled = _mock_http_error_response(429, retry_after=0)
+        session.post.side_effect = [throttled, throttled]
+
+        with patch("time.sleep"):
+            with self.assertRaises(cat.requests.exceptions.HTTPError):
+                cat.call_model(session, [], max_retries=1)
+
+        self.assertEqual(session.post.call_count, 2)
 
 
 class TestParseWithRetry(unittest.TestCase):

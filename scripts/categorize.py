@@ -2,12 +2,15 @@
 """categorize.py — batch-categorize repos via GitHub Models API, writes _data/categories.json"""
 import os
 import re
+import time
 import json
 import requests
 
 GITHUB_MODELS_URL = "https://models.github.ai/inference/chat/completions"
 MODEL = "openai/gpt-4o-mini"
 BATCH_SIZE = 10
+MAX_MODEL_RETRIES = 5
+RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
 
 SYSTEM_PROMPT = """You are a GitHub repository taxonomist. Classify each repository into one of the following top-level categories and subcategories. Use the existing taxonomy below. Prefer existing names over inventing new ones. Only use "Other" if no other category fits.
 
@@ -75,16 +78,45 @@ def build_session(token):
     return session
 
 
-def call_model(session, messages):
-    """POST to GitHub Models API, return raw content string."""
+def retry_delay_seconds(response, attempt_number):
+    """Return retry delay seconds from Retry-After header or exponential backoff."""
+    if response is not None:
+        retry_after = response.headers.get("Retry-After")
+        if retry_after is not None:
+            try:
+                return min(60, max(0, int(float(retry_after))))
+            except ValueError:
+                pass
+    return min(60, 2 ** attempt_number)
+
+
+def call_model(session, messages, max_retries=MAX_MODEL_RETRIES):
+    """POST to GitHub Models API, retrying on rate limits/transient failures."""
     payload = {
         "model": MODEL,
         "messages": messages,
         "response_format": {"type": "json_object"},
     }
-    resp = session.post(GITHUB_MODELS_URL, json=payload)
-    resp.raise_for_status()  # MUST be called before .json() — project-wide invariant
-    return resp.json()["choices"][0]["message"]["content"]
+    for attempt in range(max_retries + 1):
+        try:
+            resp = session.post(GITHUB_MODELS_URL, json=payload, timeout=60)
+            resp.raise_for_status()  # MUST be called before .json() — project-wide invariant
+            return resp.json()["choices"][0]["message"]["content"]
+        except requests.exceptions.HTTPError as exc:
+            status = exc.response.status_code if exc.response is not None else None
+            if status in RETRYABLE_STATUS_CODES and attempt < max_retries:
+                wait = retry_delay_seconds(exc.response, attempt + 1)
+                print(f"[WARN] Models API {status}; retrying in {wait}s ({attempt + 1}/{max_retries})")
+                time.sleep(wait)
+                continue
+            raise
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+            if attempt < max_retries:
+                wait = retry_delay_seconds(None, attempt + 1)
+                print(f"[WARN] Models API connection issue; retrying in {wait}s ({attempt + 1}/{max_retries})")
+                time.sleep(wait)
+                continue
+            raise
 
 
 def strip_fences(raw):
