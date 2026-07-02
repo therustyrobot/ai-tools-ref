@@ -2,6 +2,7 @@
 """categorize.py — batch-categorize repos via GitHub Models API, writes _data/categories.json"""
 import os
 import re
+import sys
 import time
 import json
 import requests
@@ -181,6 +182,38 @@ def categorize_all(repos, session):
     return cat_map
 
 
+def load_existing_categories(path="_data/categories.json"):
+    """Load existing categories from disk; return {} if missing, corrupt, or wrong type."""
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, ValueError, OSError):
+        print(f"[WARN] {path} is corrupt or unreadable — treating as empty")
+        return {}
+    if not isinstance(data, dict):
+        print(f"[WARN] {path} has unexpected type {type(data).__name__} — treating as empty")
+        return {}
+    return data
+
+
+def diff_repos(repos, existing_cat_map):
+    """Return (new_repos, removed_names) relative to existing_cat_map."""
+    current_names = {r["full_name"] for r in repos}
+    existing_names = set(existing_cat_map.keys())
+    new_repos = [r for r in repos if r["full_name"] not in existing_names]
+    removed_names = existing_names - current_names
+    return new_repos, removed_names
+
+
+def merge_categories(existing, removed_names, new_cat_map):
+    """Return merged map: existing minus removed, updated with new entries."""
+    merged = {k: v for k, v in existing.items() if k not in removed_names}
+    merged.update(new_cat_map)
+    return merged
+
+
 def write_categories(cat_map, path="_data/categories.json"):
     """Write categories map to JSON file, creating directories as needed."""
     os.makedirs(os.path.dirname(path) if os.path.dirname(path) else ".", exist_ok=True)
@@ -191,11 +224,32 @@ def write_categories(cat_map, path="_data/categories.json"):
 
 if __name__ == "__main__":
     token = os.environ["GITHUB_TOKEN"]  # KeyError = fail-fast; never default to ""
-    print("Loading repos...")
-    with open("_data/repos.json", encoding="utf-8") as f:
-        repos = json.load(f)
-    print(f"Loaded {len(repos)} repos. Starting categorization in batches of {BATCH_SIZE}...")
+    try:
+        with open("_data/repos.json", encoding="utf-8") as f:
+            repos = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"[ERROR] Cannot read _data/repos.json: {e}. Aborting.")
+        sys.exit(1)
+
+    existing = load_existing_categories()
+    new_repos, removed = diff_repos(repos, existing)
+
+    print(f"Loaded {len(repos)} repos. "
+          f"{len(new_repos)} new, {len(removed)} removed, "
+          f"{len(repos) - len(new_repos)} already categorized.")
+
+    if not new_repos and not removed:
+        print("No changes detected. Writing existing categories unchanged.")
+        write_categories(existing)
+        sys.exit(0)
+
     session = build_session(token)
-    cat_map = categorize_all(repos, session)
-    write_categories(cat_map)
-    print(f"Done. {len(cat_map)} repos categorized.")
+    try:
+        new_cat_map = categorize_all(new_repos, session) if new_repos else {}
+    except Exception as e:
+        print(f"[ERROR] Categorization failed: {e}. Aborting without writing.")
+        sys.exit(1)
+
+    merged = merge_categories(existing, removed, new_cat_map)
+    write_categories(merged)
+    print(f"Done. {len(merged)} repos in categories.json.")

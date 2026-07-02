@@ -1,2 +1,5 @@
 .DS_Store
-_data/
+_data/repos.json
+.story/snapshots/
+.story/sessions/
+.story/status.json

@@ -357,3 +357,118 @@ class TestOutputFileCreated(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# ---------------------------------------------------------------------------
+# Tests: v1.1 Data Attributes (IMPL-02, IMPL-03, IMPL-04)
+# ---------------------------------------------------------------------------
+class TestDataAttributesOnCards(unittest.TestCase):
+    """Verify render_card emits data-name, data-desc, data-category (IMPL-02)."""
+
+    def test_data_name_present(self):
+        """Card HTML must contain data-name with full_name value."""
+        repo = _make_repo("owner/myrepo", stars=100)
+        card_html = gen.render_card(repo, 0, 0, "ai-ml")
+        self.assertIn('data-name="owner/myrepo"', card_html)
+
+    def test_data_desc_present(self):
+        """Card HTML must contain data-desc with description value."""
+        repo = _make_repo("a/b", description="A cool tool", stars=100)
+        card_html = gen.render_card(repo, 0, 0, "dev-tools-cli")
+        self.assertIn('data-desc="A cool tool"', card_html)
+
+    def test_data_desc_empty_when_no_description(self):
+        """Card HTML must have data-desc='' when description is None."""
+        repo = _make_repo("a/b", description=None, stars=100)
+        card_html = gen.render_card(repo, 0, 0, "other")
+        self.assertIn('data-desc=""', card_html)
+
+    def test_data_category_matches_slug(self):
+        """Card HTML must contain data-category equal to the passed cat_slug."""
+        repo = _make_repo("a/b", stars=100)
+        card_html = gen.render_card(repo, 0, 0, "security")
+        self.assertIn('data-category="security"', card_html)
+
+    def test_data_category_default_is_other(self):
+        """render_card with no cat_slug argument must default to data-category='other'."""
+        repo = _make_repo("a/b", stars=100)
+        card_html = gen.render_card(repo, 0, 0)
+        self.assertIn('data-category="other"', card_html)
+
+    def test_sections_hierarchical_cards_have_data_category(self):
+        """Hierarchical sections HTML must contain data-category on every card."""
+        repos = [_make_repo("a/r1", stars=100)]
+        cat_map = {"a/r1": {"category": "AI & ML", "subcategory": "LLMs", "slug": "ai-ml"}}
+        hier = gen.group_by_categories_hierarchical(repos, cat_map)
+        html_out = gen.render_sections_hierarchical(hier)
+        self.assertIn('data-category="ai-ml"', html_out)
+
+
+class TestDataFilterOnNavLinks(unittest.TestCase):
+    """Verify render_nav_hierarchical emits data-filter and filter-btn class (IMPL-03)."""
+
+    def test_data_filter_on_hierarchical_nav(self):
+        """Nav links must have data-filter='{slug}' attribute."""
+        hier_groups = {"AI & ML": {"LLMs": [_make_repo()]}}
+        nav_html = gen.render_nav_hierarchical(hier_groups)
+        self.assertIn('data-filter="ai-ml"', nav_html)
+
+    def test_filter_btn_class_on_hierarchical_nav(self):
+        """Nav links must have 'filter-btn' class."""
+        hier_groups = {"AI & ML": {"LLMs": [_make_repo()]}}
+        nav_html = gen.render_nav_hierarchical(hier_groups)
+        self.assertIn('filter-btn', nav_html)
+
+    def test_data_filter_on_flat_nav(self):
+        """render_nav flat mode must also have data-filter attribute."""
+        groups = {"Python": [_make_repo()]}
+        nav_html = gen.render_nav(groups)
+        self.assertIn('data-filter="python"', nav_html)
+
+    def test_filter_btn_class_on_flat_nav(self):
+        """render_nav flat mode must also have 'filter-btn' class."""
+        groups = {"Python": [_make_repo()]}
+        nav_html = gen.render_nav(groups)
+        self.assertIn('filter-btn', nav_html)
+
+
+class TestSearchInputAndScriptTag(unittest.TestCase):
+    """Verify render_page emits search input and script tag (IMPL-01, UX-01)."""
+
+    def _render(self):
+        import datetime
+        return gen.render_page("<li>nav</li>", "<section>x</section>", 1,
+                               datetime.datetime.utcnow())
+
+    def test_search_input_present(self):
+        """render_page HTML must contain search input with id='search-input'."""
+        page = self._render()
+        self.assertIn('id="search-input"', page)
+
+    def test_search_input_before_index_categories(self):
+        """search-input must appear before 'INDEX // CATEGORIES' in HTML (UX-01)."""
+        page = self._render()
+        idx_input = page.find('id="search-input"')
+        idx_label = page.find('INDEX // CATEGORIES')
+        self.assertGreater(idx_input, 0)
+        self.assertGreater(idx_label, 0)
+        self.assertLess(idx_input, idx_label)
+
+    def test_script_tag_present(self):
+        """render_page HTML must contain <script src='search.js'>."""
+        page = self._render()
+        self.assertIn('<script src="search.js">', page)
+
+    def test_script_tag_before_body_close(self):
+        """<script src='search.js'> must appear before </body>."""
+        page = self._render()
+        idx_script = page.find('<script src="search.js">')
+        idx_body = page.find('</body>')
+        self.assertGreater(idx_script, 0)
+        self.assertGreater(idx_body, 0)
+        self.assertLess(idx_script, idx_body)
+
+    def test_clear_button_present(self):
+        """render_page HTML must contain the × clear button (UX-03)."""
+        page = self._render()
+        self.assertIn('id="search-clear"', page)

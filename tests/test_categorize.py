@@ -229,5 +229,124 @@ class TestWriteCategories(unittest.TestCase):
             self.assertEqual(data["a/r"]["slug"], "ai-ml")
 
 
+class TestLoadExistingCategories(unittest.TestCase):
+    def test_returns_empty_when_file_missing(self):
+        result = cat.load_existing_categories("/nonexistent/path/categories.json")
+        self.assertEqual(result, {})
+
+    def test_returns_dict_when_valid_file(self):
+        data = {"owner/repo": {"category": "AI & ML", "subcategory": "LLMs", "slug": "ai-ml"}}
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
+            json.dump(data, f)
+            path = f.name
+        try:
+            result = cat.load_existing_categories(path)
+            self.assertEqual(result, data)
+        finally:
+            os.unlink(path)
+
+    def test_returns_empty_on_corrupt_json(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
+            f.write("{corrupt")
+            path = f.name
+        try:
+            result = cat.load_existing_categories(path)
+            self.assertEqual(result, {})
+        finally:
+            os.unlink(path)
+
+    def test_returns_empty_on_wrong_type(self):
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
+            json.dump(["a", "b"], f)
+            path = f.name
+        try:
+            result = cat.load_existing_categories(path)
+            self.assertEqual(result, {})
+        finally:
+            os.unlink(path)
+
+    def test_returns_empty_on_permission_error(self):
+        with patch("os.path.exists", return_value=True):
+            with patch("builtins.open", side_effect=PermissionError("Permission denied")):
+                result = cat.load_existing_categories("/some/unreadable/file.json")
+                self.assertEqual(result, {})
+
+
+class TestDiffRepos(unittest.TestCase):
+    def _repo(self, full_name):
+        return {"full_name": full_name}
+
+    def test_diff_repos_all_new(self):
+        repos = [self._repo("a/r1"), self._repo("a/r2")]
+        new_repos, removed = cat.diff_repos(repos, {})
+        self.assertEqual(new_repos, repos)
+        self.assertEqual(removed, set())
+
+    def test_diff_repos_no_change(self):
+        repos = [self._repo("a/r1"), self._repo("a/r2")]
+        existing = {"a/r1": {}, "a/r2": {}}
+        new_repos, removed = cat.diff_repos(repos, existing)
+        self.assertEqual(new_repos, [])
+        self.assertEqual(removed, set())
+
+    def test_diff_repos_added(self):
+        repos = [self._repo("a/r1"), self._repo("a/r2"), self._repo("a/r3")]
+        existing = {"a/r1": {}, "a/r2": {}}
+        new_repos, removed = cat.diff_repos(repos, existing)
+        self.assertEqual(new_repos, [self._repo("a/r3")])
+        self.assertEqual(removed, set())
+
+    def test_diff_repos_removed(self):
+        repos = [self._repo("a/r1")]
+        existing = {"a/r1": {}, "a/r2": {}}
+        new_repos, removed = cat.diff_repos(repos, existing)
+        self.assertEqual(new_repos, [])
+        self.assertEqual(removed, {"a/r2"})
+
+    def test_diff_repos_mixed(self):
+        repos = [self._repo("a/r1"), self._repo("a/r3")]
+        existing = {"a/r1": {}, "a/r2": {}}
+        new_repos, removed = cat.diff_repos(repos, existing)
+        self.assertEqual(new_repos, [self._repo("a/r3")])
+        self.assertEqual(removed, {"a/r2"})
+
+    def test_diff_repos_empty_repos_list(self):
+        existing = {"a/r1": {}, "a/r2": {}}
+        new_repos, removed = cat.diff_repos([], existing)
+        self.assertEqual(new_repos, [])
+        self.assertEqual(removed, {"a/r1", "a/r2"})
+
+
+class TestMergeCategories(unittest.TestCase):
+    def test_merge_preserves_existing(self):
+        existing = {"a/r1": {"category": "AI & ML"}}
+        result = cat.merge_categories(existing, set(), {})
+        self.assertEqual(result, existing)
+
+    def test_merge_removes_destarred(self):
+        existing = {"a/r1": {"category": "AI & ML"}, "a/r2": {"category": "Security"}}
+        result = cat.merge_categories(existing, {"a/r2"}, {})
+        self.assertNotIn("a/r2", result)
+        self.assertIn("a/r1", result)
+
+    def test_merge_adds_new(self):
+        existing = {"a/r1": {"category": "AI & ML"}}
+        new_cat_map = {"a/r2": {"category": "Security"}}
+        result = cat.merge_categories(existing, set(), new_cat_map)
+        self.assertIn("a/r2", result)
+        self.assertEqual(result["a/r2"]["category"], "Security")
+
+    def test_merge_existing_not_overwritten_by_empty(self):
+        existing = {"a/r1": {"category": "AI & ML"}}
+        result = cat.merge_categories(existing, set(), {})
+        self.assertEqual(result["a/r1"]["category"], "AI & ML")
+
+    def test_merge_new_overwrites_existing(self):
+        existing = {"a/r1": {"category": "AI & ML"}}
+        new_cat_map = {"a/r1": {"category": "Security"}}
+        result = cat.merge_categories(existing, set(), new_cat_map)
+        self.assertEqual(result["a/r1"]["category"], "Security")
+
+
 if __name__ == "__main__":
     unittest.main()

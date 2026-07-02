@@ -205,19 +205,24 @@ def group_by_categories_hierarchical(repos, cat_map):
 # Rendering
 # ---------------------------------------------------------------------------
 
-def render_card(repo, index, global_index):
+def render_card(repo, index, global_index, cat_slug="other"):
     """Render a single repo card. global_index is used for barcode style cycling."""
     slug = language_to_slug(repo.get("language"))
     owner, _, name = repo["full_name"].partition("/")
     safe_name = html.escape(name)
     safe_desc = html.escape(repo.get("description") or "No description provided.")
     safe_url = html.escape(repo["html_url"])
+    safe_full_name = html.escape(repo["full_name"])
+    safe_desc_attr = html.escape(repo.get("description") or "")
     k_stars = fmt_stars(repo.get("stargazers_count"))
     lang_badge = lang_badge_html(repo.get("language"))
     barcode_style = BARCODE_STYLES[global_index % len(BARCODE_STYLES)]
 
     return f"""\
-    <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row"
+         data-name="{safe_full_name}"
+         data-desc="{safe_desc_attr}"
+         data-category="{cat_slug}">
       <a href="{safe_url}" target="_blank" rel="noopener noreferrer"
          class="card-left w-full md:w-1/3 p-8 flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-navy dark:border-white bg-background-light dark:bg-background-dark">
         <div>
@@ -257,15 +262,15 @@ def render_section(cat_name, repos, cat_num, global_offset):
         display_name, emoji, _ = LANG_META.get(slug, (cat_name, "📦", "#888888"))
         icon_html = f'<span class="text-lg">{emoji}</span>'
     count = len(repos)
-    cards = "\n".join(render_card(r, i, global_offset + i) for i, r in enumerate(repos))
+    cards = "\n".join(render_card(r, i, global_offset + i, slug) for i, r in enumerate(repos))
     return f"""\
 <section id="{slug}" data-category="{slug}" class="border-b-2 border-navy dark:border-white">
   <div class="px-8 py-4 border-b-2 border-navy dark:border-white flex justify-between items-center
               bg-zinc-200 dark:bg-zinc-800 uppercase font-bold text-[10px]">
-    <span class="flex items-center gap-3">
+    <h2 class="flex items-center gap-3 m-0 text-[10px] font-bold">
       {icon_html}
       <span>{html.escape(display_name.upper())} // CATEGORY_{cat_num:02d}</span>
-    </span>
+    </h2>
     <span class="text-primary">TOTAL_ENTRIES: {count}</span>
   </div>
   <div class="divide-y-2 divide-navy dark:divide-white">
@@ -341,7 +346,7 @@ def render_sections_hierarchical(hier_groups):
         for subcat_num, (subcat_name, repos) in enumerate(subcats.items(), start=1):
             section_lines.append(render_subcategory_header(subcat_name, len(repos), subcat_num))
             for i, repo in enumerate(repos):
-                section_lines.append(render_card(repo, i, global_offset + i))
+                section_lines.append(render_card(repo, i, global_offset + i, slug))
             global_offset += len(repos)
 
         section_lines.append('  </div>')
@@ -360,7 +365,8 @@ def render_nav(groups):
         count = len(repos)
         items.append(f"""\
           <li>
-            <a href="#{slug}" class="flex items-center justify-between px-3 py-2 text-[10px] font-bold uppercase
+            <a href="#{slug}" data-filter="{slug}"
+               class="filter-btn flex items-center justify-between px-3 py-2 text-[10px] font-bold uppercase
                hover:bg-primary hover:text-white transition-colors border-b border-navy/10 dark:border-white/10
                group">
               <span class="flex items-center gap-2">
@@ -388,7 +394,8 @@ def render_nav_hierarchical(hier_groups):
             icon_html = '<span class="opacity-60">📦</span>'
         items.append(f"""\
           <li>
-            <a href="#{slug}" class="flex items-center justify-between px-3 py-2 text-[10px] font-bold uppercase
+            <a href="#{slug}" data-filter="{slug}"
+               class="filter-btn flex items-center justify-between px-3 py-2 text-[10px] font-bold uppercase
                hover:bg-primary hover:text-white transition-colors border-b border-navy/10 dark:border-white/10
                group">
               <span class="flex items-center gap-2">
@@ -457,16 +464,18 @@ def render_page(nav_html, sections_html, total, generated_at):
 <style>
   .grid-bg{{background-size:40px 40px;background-image:radial-gradient(circle,currentColor 1px,transparent 1px);}}
   @keyframes marquee{{0%{{transform:translateX(0)}}100%{{transform:translateX(-25%)}}}}
+  .marquee-inner{{animation:marquee 20s linear infinite;}}
+  @media(prefers-reduced-motion:reduce){{.marquee-inner{{animation:none;}}}}
   .card-left{{cursor:pointer;transition:background 0.15s,color 0.15s;}}
-  .card-left:hover{{background:#FF5F1F !important;color:white !important;}}
-  .card-left:hover .file-num{{color:rgba(255,255,255,0.6);}}
-  .card-left:hover .owner-name{{opacity:0.65;}}
-  .card-left:hover .repo-name{{color:white;}}
-  .card-left:hover .lang-badge{{border-color:rgba(255,255,255,0.5);}}
-  .card-left:hover .stars-badge{{background:white;color:#FF5F1F;}}
-  .card-left:hover .meta-label{{background:white;color:#FF5F1F;}}
+  .card-left:hover,.card-left:focus-visible{{background:#FF5F1F !important;color:white !important;outline:2px solid #FF5F1F;outline-offset:2px;}}
+  .card-left:hover .file-num,.card-left:focus-visible .file-num{{color:rgba(255,255,255,0.6);}}
+  .card-left:hover .owner-name,.card-left:focus-visible .owner-name{{opacity:0.65;}}
+  .card-left:hover .repo-name,.card-left:focus-visible .repo-name{{color:white;}}
+  .card-left:hover .lang-badge,.card-left:focus-visible .lang-badge{{border-color:rgba(255,255,255,0.5);}}
+  .card-left:hover .stars-badge,.card-left:focus-visible .stars-badge{{background:white;color:#FF5F1F;}}
+  .card-left:hover .meta-label,.card-left:focus-visible .meta-label{{background:white;color:#FF5F1F;}}
   .filter-btn{{cursor:pointer;transition:background 0.12s,color 0.12s;}}
-  .filter-btn.is-active,.filter-btn:hover{{background:#FF5F1F;color:white;}}
+  .filter-btn.is-active,.filter-btn:hover,.filter-btn:focus-visible{{background:#FF5F1F;color:white;outline:2px solid #FF5F1F;outline-offset:2px;}}
 </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-navy dark:text-white font-mono selection:bg-primary selection:text-white overflow-x-hidden">
@@ -487,11 +496,11 @@ def render_page(nav_html, sections_html, total, generated_at):
 
 <main>
 
-<section class="relative min-h-[70vh] border-b-2 border-navy dark:border-white overflow-hidden">
+<section class="relative min-h-[40vh] sm:min-h-[70vh] border-b-2 border-navy dark:border-white overflow-hidden">
   <div class="absolute inset-0 grid-bg opacity-10 pointer-events-none"></div>
   <div class="absolute left-0 top-0 bottom-0 w-12 border-r-2 border-navy dark:border-white flex flex-col justify-between py-8 items-center text-[10px] [writing-mode:vertical-lr] uppercase tracking-widest font-bold">
     <span>THERUSTYROBOT // GITHUB STARS // AI-CATEGORIZED</span>
-    <span class="text-primary">EST. 2024 // VER: 1.0.0</span>
+    <span class="text-primary">EST. 2024 // VER: 1.1.0</span>
   </div>
   <div class="ml-12 p-8 md:p-16 flex flex-col justify-center h-full gap-8">
     <div class="bg-primary text-white p-2 md:p-4 inline-block max-w-fit mb-4">
@@ -532,6 +541,21 @@ def render_page(nav_html, sections_html, total, generated_at):
                 md:sticky md:top-[45px] md:self-start md:max-h-[calc(100vh-45px)] md:overflow-y-auto
                 bg-background-light dark:bg-background-dark flex-shrink-0">
     <div class="p-4 border-b-2 border-navy dark:border-white">
+      <div class="relative flex items-center">
+        <input id="search-input" type="text"
+               placeholder="SEARCH REPOS..."
+               class="w-full bg-transparent border-2 border-navy dark:border-white
+                      px-3 py-2 text-[10px] font-bold uppercase font-mono
+                      placeholder-navy/40 dark:placeholder-white/40
+                      focus:outline-none focus:border-primary" />
+        <button id="search-clear"
+                onclick="document.getElementById('search-input').value='';document.getElementById('search-input').dispatchEvent(new Event('input'));this.style.display='none';"
+                style="display:none"
+                class="absolute right-2 text-[10px] font-bold opacity-50 hover:opacity-100
+                       bg-transparent border-0 cursor-pointer px-1">&#x2715;</button>
+      </div>
+    </div>
+    <div class="p-4 border-b-2 border-navy dark:border-white">
       <div class="text-[10px] font-bold uppercase tracking-widest mb-3 opacity-60">INDEX // CATEGORIES</div>
       <nav>
         <ul class="space-y-0">
@@ -546,7 +570,7 @@ def render_page(nav_html, sections_html, total, generated_at):
 </div>
 
 <div class="bg-primary py-3 border-b-2 border-navy dark:border-white overflow-hidden whitespace-nowrap">
-  <div class="flex items-center gap-12 text-white font-bold text-2xl animate-[marquee_20s_linear_infinite]">
+  <div class="marquee-inner flex items-center gap-12 text-white font-bold text-2xl">
     <span class="uppercase">{marquee_content}</span>
   </div>
 </div>
@@ -556,10 +580,11 @@ def render_page(nav_html, sections_html, total, generated_at):
 <footer class="p-4 border-t-2 border-navy dark:border-white">
   <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase opacity-60">
     <div>STARS_GALLERY // AUTO-GENERATED // DATA FROM GITHUB API</div>
-    <div class="flex gap-4"><span>BUILD_V_1.0</span><span>SYSTEM_STATUS: OK</span></div>
+    <div class="flex gap-4"><span>BUILD_V_1.1</span><span>SYSTEM_STATUS: OK</span></div>
   </div>
 </footer>
 
+<script src="search.js"></script>
 </body>
 </html>"""
 
