@@ -1,0 +1,3587 @@
+{
+  "facebook/astryx": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "usestrix/strix": {
+    "category": "Security",
+    "subcategory": "Other",
+    "slug": "security"
+  },
+  "spaceship-prompt/spaceship-prompt": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "upstash/context7": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "1771-Technologies/lytenyte": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "tonygoacher/TrakTrike-Controller": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "Other",
+    "slug": "esp32-hardware"
+  },
+  "dutchcoders/transfer.sh": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "ohmyzsh/ohmyzsh": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "hyperupcall/autoenv": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "RackulaLives/Rackula": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "Kobii-git/rackpad": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "kocierik/consul-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "microsoft/EnterpriseMCP": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "kocierik/compose-to-nomad": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "kocierik/lazyansible": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "dynatrace-oss/dtctl": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "ivo-toby/contentful-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "dynatrace-oss/dynatrace-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "bytedance/Dolphin": {
+    "category": "AI & ML",
+    "subcategory": "Other",
+    "slug": "ai-ml"
+  },
+  "baairon/torlink": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "qdm12/gluetun-wiki": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "geekau/mediastack": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "NirDiamant/RAG_Techniques": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "ripienaar/free-for-dev": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "every-app/open-seo": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "Fission-AI/OpenSpec": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "anomalyco/opencode": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "anton-abyzov/specweave": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "jmagar/claude-homelab": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "netresearch/docker-development-skill": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "cockpit-project/cockpit": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "nikitadoudikov/claude-pulse": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "immortalbob/MiniDash-Wallpanel-PIR": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "immortalbob/Mnemolis": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "samuelloranger/labby": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "psviderski/unregistry": {
+    "category": "DevOps & Infra",
+    "subcategory": "Deployment & PaaS",
+    "slug": "devops-infra"
+  },
+  "psviderski/uncloud": {
+    "category": "DevOps & Infra",
+    "subcategory": "Deployment & PaaS",
+    "slug": "devops-infra"
+  },
+  "mauriceboe/TREK": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "DonMcD/ultimate-plex-stack": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Arr Stack",
+    "slug": "media-entertainment"
+  },
+  "firecat53/dockerfiles": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "cbirkenbeul/docker-homelab": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "jamcalli/Pulsarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "saltyorg/Saltbox": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "EgalitarianMonkey/hometube": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "Luctia/ezarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "giuseppe99barchetta/SuggestArr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "DialmasterOrg/Youtarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "calibrain/shelfmark": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Maintainerr/Maintainerr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "chrisbenincasa/tunarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "edde746/plezy": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "TRaSH-Guides/Guides": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "themepark-dev/theme.park": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "SimpleHomelab/Docker-Traefik": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "Tautulli/Tautulli": {
+    "category": "Monitoring & Alerts",
+    "subcategory": "Other",
+    "slug": "monitoring-alerts"
+  },
+  "dedicatedcode/reitti": {
+    "category": "AI & ML",
+    "subcategory": "Other",
+    "slug": "ai-ml"
+  },
+  "raiyanyahya/llmaker": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "google-labs-code/design.md": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "aleksclark/bezalel": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "garrytan/gstack": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "ertugrul-dmr/clean-code-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "addyosmani/web-quality-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "Community-Access/accessibility-agents": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "MicroPyramid/Django-CRM": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "frappe/crm": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "nocobase/nocobase": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "senlindesign/taste-skill": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "CraftOS-dev/CraftBot": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "unkyulee/phone-enclosure": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "gouwsxander/Reef": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Other",
+    "slug": "mobile-desktop"
+  },
+  "n-IA-hane/esphome-intercom": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Embedded",
+    "slug": "esp32-hardware"
+  },
+  "supabitapp/supacode": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "valcanobacon/BoostCLI": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "TechnitiumSoftware/DnsServer": {
+    "category": "Networking",
+    "subcategory": "Networking",
+    "slug": "networking"
+  },
+  "4ian/GDevelop": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "TorqueGameEngines/Torque2D": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "godotengine/godot": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "xiao-villamor/PrintStash": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "Chimedeck/chimedeck": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "ponikar/phone-for-ai-agent": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "callstack/agent-device": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "go-vikunja/vikunja": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "NixOS/nixpkgs": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "kolaente/vikunja-raycast-extension": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "arendst/Tasmota": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "spotweb/spotweb": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "photoprism/photoprism": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "OctoPrint/OctoPrint": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "netdata/netdata": {
+    "category": "Monitoring & Alerts",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "monitoring-alerts"
+  },
+  "tenable/pyTenable": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "monicahq/monica": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "ghostfolio/ghostfolio": {
+    "category": "Data & Analytics",
+    "subcategory": "Data & Analytics",
+    "slug": "data-analytics"
+  },
+  "huginn/huginn": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "highlight/highlight": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "hyperdxio/hyperdx": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "openreplay/openreplay": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "self-hosting-homelab"
+  },
+  "tracewayapp/traceway": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "inovector/mixpost": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "gitroomhq/postiz-app": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "fonoster/fonoster": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "novuhq/novu": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "pocketbase/pocketbase": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "PostHog/posthog": {
+    "category": "Data & Analytics",
+    "subcategory": "Data & Analytics",
+    "slug": "data-analytics"
+  },
+  "grafana/loki": {
+    "category": "DevOps & Infra",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "devops-infra"
+  },
+  "prometheus/prometheus": {
+    "category": "DevOps & Infra",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "devops-infra"
+  },
+  "nylas/cli": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "reacherhq/check-if-email-exists": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "plastic-labs/honcho": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "tamnd/kage": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "DietrichGebert/ponytail": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "semaphoreui/semaphore": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "spantaleev/matrix-docker-ansible-deploy": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "jeffvli/feishin": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Entertainment",
+    "slug": "self-hosting-homelab"
+  },
+  "ChristianLempa/boilerplates-library": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "saksham2001/PulseLoopiOS": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Mobile & Desktop",
+    "slug": "mobile-desktop"
+  },
+  "moghtech/komodo": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "denho/faved": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "elk-zone/elk": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "chr0nzz/traefik-manager": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "Priveetee/TypeType": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "silverbulletmd/silverbullet": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "node-red/node-red": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "timothepoznanski/poznote": {
+    "category": "Productivity & Notes",
+    "subcategory": "Notes & Knowledge",
+    "slug": "productivity-notes"
+  },
+  "osresearch/papercraft": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "osresearch/mdt9100": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "MichaIng/DietPi": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Other",
+    "slug": "self-hosting-homelab"
+  },
+  "onllm-dev/onWatch": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "RyanCodrai/turbovec": {
+    "category": "Data & Analytics",
+    "subcategory": "Other",
+    "slug": "data-analytics"
+  },
+  "phuryn/pm-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "softvar/enhanced-github": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "nilbuild/githunt": {
+    "category": "Data & Analytics",
+    "subcategory": "Other",
+    "slug": "data-analytics"
+  },
+  "Mottie/GitHub-userscripts": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "refined-github/refined-github": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "x1xhlol/system-prompts-and-models-of-ai-tools": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "aaif-goose/goose": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "teng-lin/notebooklm-py": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "evandcoleman/ansible-hashicorp-homelab": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "geerlingguy/ansible-collection-mac": {
+    "category": "DevOps & Infra",
+    "subcategory": "Other",
+    "slug": "devops-infra"
+  },
+  "geerlingguy/mac-dev-playbook": {
+    "category": "DevOps & Infra",
+    "subcategory": "Other",
+    "slug": "devops-infra"
+  },
+  "1Password/ansible-onepasswordconnect-collection": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "1Password/shell-plugins": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "1Password/terraform-provider-onepassword": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "1Password/connect": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "mem0ai/mem0": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "tawanorg/claude-sync": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "claraverse-space/ClaraVerse": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "AUTOMATIC1111/stable-diffusion-webui": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "ggml-org/llama.cpp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "janhq/jan": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "supermemoryai/supermemory": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "payloadcms/payload": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "HeyPuter/puter": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "koala73/worldmonitor": {
+    "category": "Data & Analytics",
+    "subcategory": "Data & Analytics",
+    "slug": "data-analytics"
+  },
+  "usekaneo/kaneo": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "pixlcore/xyops": {
+    "category": "DevOps & Infra",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "devops-infra"
+  },
+  "Yooshyasha/Trof": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "SikamikanikoBG/homelab-monitor": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "sumon-ohid/better-paas": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "pewdiepie-archdaemon/odysseus": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Other",
+    "slug": "self-hosting-homelab"
+  },
+  "Panniantong/Agent-Reach": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "aquasecurity/trivy": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "PaddlePaddle/PaddleOCR": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "microsoft/VibeVoice": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "lfnovo/open-notebook": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "skillsgate/skillsgate": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "kocierik/mcp-nomad": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "hashicorp/nomad": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "7h30th3r0n3/Raspyjack": {
+    "category": "Networking",
+    "subcategory": "Networking",
+    "slug": "networking"
+  },
+  "fluxcd/flux2": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "Infisical/infisical": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "github/spec-kit": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "electerm/electerm": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "bscott/subtrackr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "evert/h4w": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "1Panel-dev/1Panel": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "lklynet/hypermind-swarm": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Yoas1/ansible-handson": {
+    "category": "DevOps & Infra",
+    "subcategory": "Other",
+    "slug": "devops-infra"
+  },
+  "argahv/sisyphus-academica": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "0-AI-UG/cate": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "solderparty/keebdeck_basic_hw": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "open-gsd/gsd-core": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "MemPalace/mempalace": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "midday-ai/midday": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "open-gsd/gsd-pi": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "statamic/seo-pro": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "canvrno/ProxmoxMCP": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Proxmox & Containers",
+    "slug": "self-hosting-homelab"
+  },
+  "RekklesNA/ProxmoxMCP-Plus": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "railwayapp/railway-skills": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "railwayapp/cli": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "mblayman/homeschool": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "mnemosyne-oss/mnemosyne": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "esengine/DeepSeek-Reasonix": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "bottobot/touchdesigner-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "8beeeaaat/touchdesigner-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "phase-rs/phase": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "elie222/inbox-zero": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "RareSense/Nova3D": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "searxng/searxng": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "rtk-ai/rtk": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "CrashPlan-Labs/CrashPlan-agent-management": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "CrashPlan-Labs/Tools": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "jlesage/docker-crashplan-pro": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Proxmox & Containers",
+    "slug": "self-hosting-homelab"
+  },
+  "tinyhumansai/openhuman": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "ionutdecebal/rsvpnano": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "super-productivity/super-productivity": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "crynta/terax-ai": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "dekuNukem/Amazon_Dash_Button": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "cubancodepath/actual-expo": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Other",
+    "slug": "self-hosting-homelab"
+  },
+  "AhmedSaadi0/NibrasShell": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "millionco/react-doctor": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "decolua/9router": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "rohitg00/agentmemory": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "anthropic/financial-services": {
+    "category": "AI & ML",
+    "subcategory": "Other",
+    "slug": "ai-ml"
+  },
+  "bytedance/UI-TARS-desktop": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "CloakHQ/CloakBrowser": {
+    "category": "Security",
+    "subcategory": "Other",
+    "slug": "security"
+  },
+  "VectifyAI/PageIndex": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "yikart/AiToEarn": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "HKUDS/AI-Trader": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "InsForge/InsForge": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "anthropics/financial-services": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "mohesles/my-skylight-calendar": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "aliasvault/aliasvault": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "microhustlestack/cerebro-skill": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "ChrispyBacon-dev/DockFlare": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "dmunozv04/iSponsorBlockTV": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "nasty-project/nasty": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "cloudflare/agentic-inbox": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "Billionmail/BillionMail": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "getlimelight/limelight-sdk": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "espressif/esp-claw": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "browserbase/skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "bokonon23/clawdbot-cost-monitor": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "jeff-schumann/EasyDMG": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "nexu-io/open-design": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "bigcode-project/bigcode-evaluation-harness": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "can1357/oh-my-pi": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "peteromallet/desloppify": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "jgravelle/jcodemunch-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "C4Labs/C4iOS": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Other",
+    "slug": "mobile-desktop"
+  },
+  "bytedance/deer-flow": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "joeynyc/hermes-chronos-forge": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "outsourc-e/hermes-workspace": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "joeynyc/openclaw-mission-control": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "danshapiro/kilroy": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "virattt/dexter": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "joeynyc/kanban": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "camel-ai/camel": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "camel-ai/mcpify": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "cosmicstack-labs/mercury-agent": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "joeynyc/hermes-skins": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "joeynyc/hermes-hudui": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "pierrecomputer/pierre": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Finrandojin/alexandria-audiobook": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "logly/mureo": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "louis030195/apollo-io-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "MendleM/Pipepost": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "k2-fsa/OmniVoice": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "fox-in-the-box-ai/fox-in-the-box": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "dodo-reach/hermes-desktop": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Networking & Remote Access",
+    "slug": "self-hosting-homelab"
+  },
+  "stephenschoettler/hermes-lcm": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "Alishahryar1/free-claude-code": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "ComposioHQ/awesome-codex-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "Z4nzu/hackingtool": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "1jehuang/jcode": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "fspecii/ace-step-ui": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "ruvnet/ruflo": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "soxoj/maigret": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "TauricResearch/TradingAgents": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "directus/directus": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "RenzoBeux/Dashboarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "vectorize-io/hindsight": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "accomplish-ai/coworker": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "aronk254/Facebook-Marketplace-Auto-Poster": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "Codehagen/Autoselll": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "sa6ds/flipassist": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "safishamsi/graphify": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "TomBursch/kitchenowl": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "zubair-trabzada/ai-marketing-claude": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "DivMagicCom/DivMagic": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "Kargatharaakash/website-design-systems-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "dembrandt/dembrandt": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "BobiTenta/website-design-systems-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "santifer/career-ops": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "neka-nat/freecad-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "akuehlewind/ESPHome-touch-display-mount": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "Other",
+    "slug": "esp32-hardware"
+  },
+  "VoltAgent/awesome-design-md": {
+    "category": "Awesome Lists",
+    "subcategory": "Other",
+    "slug": "awesome-lists"
+  },
+  "tugbayatilla/personal-kanban": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "aaronkwhite/pm-toolkit": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "stefanposs/agent-board": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "appsoftwareltd/vscode-agent-kanban": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "kagan-sh/kagan": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "cboxdk/statamic-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "dmno-dev/varlock": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "pbakaus/impeccable": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "micolous/footswitch": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "flcl42/kanban-fs": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "bmad-code-org/BMAD-METHOD": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "ericman93/claude-agent-team-board": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "rampstackco/claude-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "sharpdeveye/maestro": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "bamboovir/typst-resume-template": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "mizlan/typst-resume-sans": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "peterpf/modern-typst-resume": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "giovanniberti/moderncv.typst": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "resumx/resumx": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "wodeni/nimo-markdown-cv": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "posquit0/Awesome-CV": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "smortezah/awesome-cv": {
+    "category": "Awesome Lists",
+    "subcategory": "Other",
+    "slug": "awesome-lists"
+  },
+  "salomonelli/best-resume-ever": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "amruthpillai/reactive-resume": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "divisionseven/unified-kanban": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "AeternaLabsHQ/pullmd": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "warpdotdev/warp": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "Storybloq/storybloq": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "langchain-ai/langchain": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "firecrawl/firecrawl": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "Shubhamsaboo/awesome-llm-apps": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "FoundationAgents/MetaGPT": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "apisit31120/miniclaw-esp32": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Embedded",
+    "slug": "esp32-hardware"
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "infiniflow/ragflow": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "browser-use/browser-use": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "kbwo/ccmanager": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "Davincible/claude-code-open": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "ShenSeanChen/launch-kimi-k2-claude": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "zhayujie/CowAgent": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "linuxhsj/openclaw-zero-token": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "happier-dev/happier": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "fakerybakery/openbridge": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "OpenCoworkAI/open-codesign": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "sinameraji/kimiflare": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "tddworks/ClaudeBar": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "howardpen9/kimi-code-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "vllm-project/vllm": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "ollama/ollama": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "gastownhall/gastown": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "GreenSheep01201/Claw-Kanban": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "d3x293/code-crew": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "ramn51/titan-orchestrator": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "Tght1211/AutoRouterKey": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "alpozcan/pi-triage": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "brooks376/AutoClaw-zhipu-ai": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "NodeNestor/CodeGate": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "kevinrgu/autoagent": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "davis7dotsh/better-context": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "openai/symphony": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "dirac-run/dirac": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "rendercv/rendercv": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "NateBJones-Projects/OB1": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "sipeed/NanoKVM": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "rebelytics/one-skill-to-rule-them-all": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "hamed-elfayome/Claude-Usage-Tracker": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "mattpocock/skills": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "enulus/OpenPackage": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "nimbalyst/nimbalyst": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "azukaar/Cosmos-Server": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "slopus/happy": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "marcus/td": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "winfunc/opcode": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "smtg-ai/claude-squad": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "siteboon/claudecodeui": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "therealarthur/myrlin-workbook": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "getpaseo/paseo": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "FrkAk/piyaz": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "moosefs/moosefs": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "kieraneglin/pinchflat": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "abhigyanpatwari/GitNexus": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "NPC-Worldwide/npcsh": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "hail2victors/n8n-Actual-Automation": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "BerriAI/litellm": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "johnkf5-ops/the-dev-squad": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "heyhuynhgiabuu/proxypal": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "Tencent-Hunyuan/HY-World-2.0": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "heygen-com/hyperframes": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "adithyavis/serverless-expo-ota-server": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "gronxb/hot-updater": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "nagisanzenin/claude-code-production-grade-plugin": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "temm1e-labs/temm1e": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "RedPlanetHQ/redplanethq-marketplace": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "n0-computer/iroh": {
+    "category": "Networking",
+    "subcategory": "Networking",
+    "slug": "networking"
+  },
+  "NousResearch/autonovel": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "NousResearch/hermes-paperclip-adapter": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "ceccopierangiolieugenio/pyTermTk": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "Fr4nkFletcher/ESP32-Marauder-Cheap-Yellow-Display": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Embedded",
+    "slug": "esp32-hardware"
+  },
+  "JesseCHale/HaleHound-CYD": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "Fr4nkFletcher/NerdMiner_v2-Cheap-Yellow-Display": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "mPWRD-OS/mPWRD-OS": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "kvarnelis/deep-recon": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "witnessmenow/ESP32-Cheap-Yellow-Display": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Embedded",
+    "slug": "esp32-hardware"
+  },
+  "codejunkie99/agentic-stack": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "rowboatlabs/rowboat": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "charmbracelet/gum": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "glanceapp/glance": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "lsdefine/GenericAgent": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "multica-ai/multica": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "coleam00/Archon": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "addyosmani/agent-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "HKUDS/DeepTutor": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "czlonkowski/n8n-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "aden-hive/hive": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "basecamp/fizzy": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "mnfst/manifest": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "jray2123/zen-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "gitleaks/gitleaks": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "jdcodes1/facebook-marketplace-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "xykong/flux-markdown": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Documentation & Sites",
+    "slug": "dev-tools-cli"
+  },
+  "songquanpeng/one-api": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "keycloak/keycloak": {
+    "category": "Security",
+    "subcategory": "Password & Auth",
+    "slug": "security"
+  },
+  "IyadhKhalfallah/clauditor": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "rybbit-io/rybbit": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "blst-security/cherrybomb": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "aleksclark/awesometree": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "mikeroyal/Self-Hosting-Guide": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "rcourtman/Pulse": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "self-hosting-homelab"
+  },
+  "homarr-labs/dashboard-icons": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "dani-garcia/vaultwarden": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "ChristianLempa/boilerplates": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "portainer/portainer": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "mother-of-all-self-hosting/mash-playbook": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "mikeroyal/NixOS-Guide": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "rommapp/romm": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "homebridge/homebridge": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "home-assistant/core": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "bitwarden/server": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "TryGhost/Ghost": {
+    "category": "Web & Frontend",
+    "subcategory": "Documentation & Sites",
+    "slug": "web-frontend"
+  },
+  "gatsbyjs/gatsby": {
+    "category": "Web & Frontend",
+    "subcategory": "Documentation & Sites",
+    "slug": "web-frontend"
+  },
+  "gohugoio/hugo": {
+    "category": "Web & Frontend",
+    "subcategory": "Documentation & Sites",
+    "slug": "web-frontend"
+  },
+  "getsentry/self-hosted": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "self-hosting-homelab"
+  },
+  "runtipi/runtipi": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "getumbrel/umbrel": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "alam00000/bentopdf": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "vxcontrol/pentagi": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "gotify/server": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "getmaxun/maxun": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "Zackriya-Solutions/meetily": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "linkwarden/linkwarden": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "fosrl/pangolin": {
+    "category": "Networking",
+    "subcategory": "Networking & Remote Access",
+    "slug": "networking"
+  },
+  "m1k1o/neko": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Proxmox & Containers",
+    "slug": "self-hosting-homelab"
+  },
+  "navidrome/navidrome": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "anderspitman/awesome-tunneling": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Networking & Remote Access",
+    "slug": "self-hosting-homelab"
+  },
+  "henrygd/beszel": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "self-hosting-homelab"
+  },
+  "chaitin/SafeLine": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "onyx-dot-app/onyx": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "Dokploy/dokploy": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "ToolJet/ToolJet": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "louislam/dockge": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "karakeep-app/karakeep": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "ArchiveBox/ArchiveBox": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "community-scripts/ProxmoxVE": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Proxmox & Containers",
+    "slug": "self-hosting-homelab"
+  },
+  "dgtlmoon/changedetection.io": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "self-hosting-homelab"
+  },
+  "louislam/uptime-kuma": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Monitoring & Alerts",
+    "slug": "self-hosting-homelab"
+  },
+  "immich-app/immich": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "IT-BAER/proxmorph": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Proxmox & Containers",
+    "slug": "self-hosting-homelab"
+  },
+  "kepano/defuddle": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "BeehiveInnovations/pal-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "punkpeye/awesome-mcp-servers": {
+    "category": "Awesome Lists",
+    "subcategory": "Other",
+    "slug": "awesome-lists"
+  },
+  "hargata/lubelog": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "invoiceninja/invoiceninja": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "invoiceninja/dockerfiles": {
+    "category": "DevOps & Infra",
+    "subcategory": "Other",
+    "slug": "devops-infra"
+  },
+  "InvoicePlane/InvoicePlane": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "coollabsio/coolify": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "rustdesk/rustdesk-server": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Other",
+    "slug": "self-hosting-homelab"
+  },
+  "JohannesKaufmann/html-to-markdown": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "gildas-lormeau/single-file-cli": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "googleworkspace/cli": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "lobehub/lobehub": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "HKUDS/OpenHarness": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "librefang/librefang": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "ghostty-org/ghostty": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "InvoiceShelf/InvoiceShelf": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "Grashjs/cmms": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "BloopAI/vibe-kanban": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "vas3k/TaxHacker": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "corbt/2025-tax-engine": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "anthropics/claude-plugins-official": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "makeplane/plane": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "automazeio/vibeproxy": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "brimdata/super": {
+    "category": "Data & Analytics",
+    "subcategory": "Data & Analytics",
+    "slug": "data-analytics"
+  },
+  "VoltAgent/voltagent": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "router-for-me/CLIProxyAPI": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "RedPlanetHQ/core": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "facebook/docusaurus": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Documentation & Sites",
+    "slug": "dev-tools-cli"
+  },
+  "traefik/traefik": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "kuchin/awesome-cto": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "enescingoz/awesome-n8n-templates": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "lissy93/personal-security-checklist": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "github/awesome-copilot": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "Hack-with-Github/Awesome-Hacking": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "serhii-londar/open-source-mac-os-apps": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "dkhamsing/open-source-ios-apps": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Mobile & Desktop",
+    "slug": "mobile-desktop"
+  },
+  "awesome-selfhosted/awesome-selfhosted": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "trimstray/the-book-of-secret-knowledge": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "lukasz-madon/awesome-remote-job": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "VoltAgent/awesome-openclaw-skills": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "goabstract/Awesome-Design-Tools": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "deepseek-ai/awesome-deepseek-integration": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "veggiemonk/awesome-docker": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "jaywcjlove/awesome-mac": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "mobile-next/mobile-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "test-zeus-ai/testzeus-hercules": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "dequelabs/axe-core": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "NousResearch/hermes-agent": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "matthewhadley/homeassistant-firewalla": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "Werewolfke/firewalla-list-automator": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "djuntgen/firewalla-home-assistant": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "blueharford/hass-firewalla": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "firewalla/fw-public-lists": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "somnai-dreams/pretext-demos": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "getredash/redash": {
+    "category": "Data & Analytics",
+    "subcategory": "Other",
+    "slug": "data-analytics"
+  },
+  "grafana/grafana": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "affaan-m/ECC": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "HKUDS/LightRAG": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "czlonkowski/n8n-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "thedotmack/claude-mem": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "hesreallyhim/awesome-claude-code": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "DefinedNet/nebula": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "langflow-ai/langflow": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "Mintplex-Labs/anything-llm": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "danny-avila/LibreChat": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "oobabooga/textgen": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "open-webui/open-webui": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "paperclipai/paperclip": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "derekshreds/Snacks": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "Cleanuparr/Cleanuparr": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "SaaSy-Solutions/mockforge": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "metalbear-co/mirrord": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "antithesishq/bombadil": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "truffle-ai/dexto": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "steipete/agent-scripts": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "first-fluke/oh-my-agent": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "neiii/bridle": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "openclaw/mcporter": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "ossature/ossature": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "Panonim/dynacat": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "standardagents/arrow-js": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "FujiwaraChoki/MoneyPrinter": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "usetrmnl/terminus": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  },
+  "public-apis/public-apis": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "h0x91b/dev-3.0": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "payalnik/openclaw-voice-ios": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "popmechanic/VibesOS": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "hcengineering/huly-selfhost": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "opentabs-dev/opentabs": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "VoltAgent/awesome-codex-subagents": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "OthmaneBlial/rustframe": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Mobile & Desktop",
+    "slug": "mobile-desktop"
+  },
+  "Crosstalk-Solutions/project-nomad": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "sarogamedev/CyberDeck": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "open-webui/open-terminal": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "blackboardsh/electrobun": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Mobile & Desktop",
+    "slug": "mobile-desktop"
+  },
+  "msitarzewski/agency-agents": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "sinatra/sinatra": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "Q00/ouroboros": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "joshcarty/google-searchconsole": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "googleanalytics/google-analytics-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "alibaba/page-agent": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "josephgoksu/TaskWing": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "OpenBMB/ChatDev": {
+    "category": "AI & ML",
+    "subcategory": "LLM UIs & Chat Interfaces",
+    "slug": "ai-ml"
+  },
+  "geezerrrr/agent-town": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "amittell/firewalla-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "yousifamanuel/terraink": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "bradwmorris/ra-h_os": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "appium/appium": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "crewAIInc/crewAI": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "oraios/serena": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "NirDiamant/GenAI_Agents": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "langgenius/dify": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "earendil-works/pi": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "tinyauthapp/tinyauth": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Password & Auth",
+    "slug": "self-hosting-homelab"
+  },
+  "authfill/authfill": {
+    "category": "Security",
+    "subcategory": "Security",
+    "slug": "security"
+  },
+  "danielmiessler/LifeOS": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "CodeWithCJ/SparkyFitness": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "QwenLM/Qwen-Agent": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "gildas-lormeau/SingleFile": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "GoogleChrome/chrome-extensions-samples": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "nkasco/DispatchTodoApp": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "mitchellh/nixos-config": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "olafkfreund/nixos_config": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "AdguardTeam/AdGuardExtra": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Dammyjay93/interface-design": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "sipeed/picoclaw": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "anombyte93/atlas-session-lifecycle": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "aleksclark/homebrew-tap": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "aleksclark/crush-modules": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "cartesia-one/doomsday-os": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "kiryano/Scout": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "RunMaestro/Maestro": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "MoonshotAI/kimi-cli": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "obra/superpowers": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "Agent-Field/agentfield": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "Nezreka/SoulSync": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "buildarr/buildarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "Flemmarr/Flemmarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "recyclarr/recyclarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "lissy93/dashy": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "homarr-labs/homarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "causefx/Organizr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "aleksilassila/reiverr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "mrusse/soularr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "Unpackerr/unpackerr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "SimpleHomelab/Deployrr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "RandomNinjaAtk/arr-scripts": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "Flexget/Flexget": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "charmbracelet/crush": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "Kilo-Org/agentic-path": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "Kilo-Org/kilo-marketplace": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "Subhamk2004/OpusForge": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "qualcomm/GenieX": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "openclaw/openclaw": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "valdanylchuk/breezybox": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Embedded",
+    "slug": "esp32-hardware"
+  },
+  "vibeflowing-inc/vibe_figma": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "styleframe-dev/styleframe": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "StudioZeroZero/Twice-Monitor": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "retypeapp/retype": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Documentation & Sites",
+    "slug": "dev-tools-cli"
+  },
+  "LumePart/Explo": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "BelfrySCAD/BOSL2": {
+    "category": "AI & ML",
+    "subcategory": "Other",
+    "slug": "ai-ml"
+  },
+  "slskd/slskd": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "deucebucket/library-manager": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "gluestack/storybook-next-components": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "cybrcore/cybrcolors": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "cybrcore/cybrdots": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "advplyr/audiobookshelf": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "vercel-labs/agent-browser": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "headroomlabs-ai/headroom": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "Snippet-Curator/curator": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "V1ck3s/octo-fiesta": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "ghobs91/mediora": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "Sync-in/server": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "streamyfin/streamyfin": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "seerr-team/seerr": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "OpenCentauri/cc-fw-tools": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "Other",
+    "slug": "esp32-hardware"
+  },
+  "OpenCentauri/OpenCentauri": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "Other",
+    "slug": "esp32-hardware"
+  },
+  "xpipe-io/xpipe": {
+    "category": "Networking",
+    "subcategory": "Other",
+    "slug": "networking"
+  },
+  "creativetimofficial/soft-ui-dashboard-laravel": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "actualbudget/actual": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "rosskouk/asknavidrome": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "gethomepage/homepage": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "Tarow/nix-podman-stacks": {
+    "category": "DevOps & Infra",
+    "subcategory": "Other",
+    "slug": "devops-infra"
+  },
+  "MagicMirrorOrg/MagicMirror": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Dashboards & Homepages",
+    "slug": "self-hosting-homelab"
+  },
+  "IsThisMeta/zagreus": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Other",
+    "slug": "self-hosting-homelab"
+  },
+  "withastro/astro": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "yusing/godoxy": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "CorentinTh/it-tools": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "iib0011/omni-tools": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "alexta69/metube": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "binwiederhier/ntfy": {
+    "category": "Networking",
+    "subcategory": "Other",
+    "slug": "networking"
+  },
+  "terry90/soulbeet": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "gamosoft/NoteDiscovery": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Notes & Knowledge",
+    "slug": "self-hosting-homelab"
+  },
+  "getmydia/mydia": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "maxdorninger/MediaManager": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "voron69-bit/Stepifi": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "getarcaneapp/arcane": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "jonatasleon/kr-cli": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "Or4cu1o/CLIDOWNROM": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "o7-machinehum/Blackpants": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "nixopus/nixopus": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "magnitudedev/browser-agent": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "nikolqyy/bypass-paywalls-chrome": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "fortarch/bypass-paywalls-chrome-clean-magnolia1234-kiwibrowser": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "nang-dev/hover-paywalls-browser-extension": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "fiso64/sockseek": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "dohsimpson/TaskTrove": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "alirezarezvani/claude-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "PhialsBasement/LibreCrawl": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Speyll/dotfiles": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "tojrobinson/jurassicsystems.com": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "ad-on-is/coredock": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "happyDomain/happydeliver": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
+  },
+  "contre95/soulsolid": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "cstaelen/tidarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "anywhy-io/flake": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "asmvik/skhd": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "asmvik/yabai": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "music-assistant/server": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "JaviPege/sailarr-installer": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Dodelidoo-Labs/sonobarr": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "firecrawl/open-lovable": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "fccview/jotty": {
+    "category": "Productivity & Notes",
+    "subcategory": "Other",
+    "slug": "productivity-notes"
+  },
+  "mermaid-js/mermaid-cli": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "mermaid-js/mermaid": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Documentation & Sites",
+    "slug": "dev-tools-cli"
+  },
+  "glzr-io/glazewm": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Mobile & Desktop",
+    "slug": "mobile-desktop"
+  },
+  "basecamp/omarchy": {
+    "category": "Mobile & Desktop",
+    "subcategory": "Mobile & Desktop",
+    "slug": "mobile-desktop"
+  },
+  "n8n-io/n8n": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "hunvreus/devpush": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "sineorg/docs": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Documentation & Sites",
+    "slug": "dev-tools-cli"
+  },
+  "sineorg/store": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "rustdesk/rustdesk": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Networking & Remote Access",
+    "slug": "self-hosting-homelab"
+  },
+  "AppFlowy-IO/AppFlowy": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "maierfelix/poxi": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "jvalen/pixel-art-react": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "piskelapp/piskel": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "aseprite/aseprite": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "knownsec/aipyapp": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "9001/copyparty": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "gluestack/gluestack-ui": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "phmullins/awesome-macos": {
+    "category": "Awesome Lists",
+    "subcategory": "Other",
+    "slug": "awesome-lists"
+  },
+  "twentyhq/twenty": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "adafruit/pi_video_looper": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "Bastardkb/splinktegrated": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Bastardkb/Scylla": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "erenatas/charybdis-wireless-3x6": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "dipakkr/A-to-Z-Resources-for-Students": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "TriliumNext/Trilium": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "NirDiamant/agents-towards-production": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "Termix-SSH/Termix": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Networking & Remote Access",
+    "slug": "self-hosting-homelab"
+  },
+  "buildermethods/agent-os": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "we-promise/sure": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "navilg/media-stack": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "passteque/gluetun": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Networking & Remote Access",
+    "slug": "self-hosting-homelab"
+  },
+  "BoPeng/ai-marketplace-monitor": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "gmoz22/facebook-marketplace-nationwide": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "GeorgiKeranov/facebook-marketplace-bot": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "mfactory-osaka/ESPTimeCast": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "onlook-dev/onlook": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "Swordfish90/cool-retro-term": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
+  }
+}
