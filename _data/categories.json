@@ -1064,11 +1064,6 @@
     "subcategory": "Generalist Agents",
     "slug": "ai-ml"
   },
-  "anthropic/financial-services": {
-    "category": "AI & ML",
-    "subcategory": "Other",
-    "slug": "ai-ml"
-  },
   "bytedance/UI-TARS-desktop": {
     "category": "AI & ML",
     "subcategory": "Agent Frameworks & Harnesses",
@@ -3583,5 +3578,10 @@
     "category": "Dev Tools & CLI",
     "subcategory": "Terminal & Shell",
     "slug": "dev-tools-cli"
+  },
+  "diegosouzapw/OmniRoute": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
   }
 }
