@@ -1374,11 +1374,6 @@
     "subcategory": "AI Productivity Tools",
     "slug": "ai-ml"
   },
-  "safishamsi/graphify": {
-    "category": "AI & ML",
-    "subcategory": "RAG & Knowledge",
-    "slug": "ai-ml"
-  },
   "TomBursch/kitchenowl": {
     "category": "Self-Hosting & Homelab",
     "subcategory": "Notes & Knowledge",
@@ -3582,6 +3577,56 @@
   "diegosouzapw/OmniRoute": {
     "category": "AI & ML",
     "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "streeriver/mini-rack-pdu": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "Coole-Guus/pi-slice-rack": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "helmarw/10inch-Rack-SDR-Station": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "Skyler84/mini-rack-ups": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "ssilverm/lasercut-mini-rack": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "wiretap-retro/Mini-Rack-1U-Pi-NAS": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "spuder/10-Inch-Rack-OpenSCAD": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "DvidMakesThings/HW_10-In-Rack_PDU": {
+    "category": "ESP32 & Hardware",
+    "subcategory": "ESP32 & Hardware",
+    "slug": "esp32-hardware"
+  },
+  "hcengineering/platform": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "Graphify-Labs/graphify": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
     "slug": "ai-ml"
   }
 }
