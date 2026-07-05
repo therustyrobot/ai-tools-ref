@@ -3628,5 +3628,30 @@
     "category": "AI & ML",
     "subcategory": "Claude Code & Skills",
     "slug": "ai-ml"
+  },
+  "sveltejs/kit": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "JuliusBrussee/caveman": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "openai/codex-plugin-cc": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "agentskills/agentskills": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "langbot-app/LangBot": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
   }
 }
