@@ -3653,5 +3653,15 @@
     "category": "AI & ML",
     "subcategory": "Generalist Agents",
     "slug": "ai-ml"
+  },
+  "ZSeven-W/openpencil": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "Leantime/leantime": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
   }
 }
