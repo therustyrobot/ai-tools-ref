@@ -1444,11 +1444,6 @@
     "subcategory": "Coding Agents & IDEs",
     "slug": "ai-ml"
   },
-  "kagan-sh/kagan": {
-    "category": "AI & ML",
-    "subcategory": "Generalist Agents",
-    "slug": "ai-ml"
-  },
   "cboxdk/statamic-mcp": {
     "category": "AI & ML",
     "subcategory": "MCP Servers & Tools",
@@ -3663,5 +3658,25 @@
     "category": "Productivity & Notes",
     "subcategory": "Productivity & Notes",
     "slug": "productivity-notes"
+  },
+  "Cockpit-HQ/Cockpit": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "MadsLorentzen/ai-job-search": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "MaximeRivest/riddle": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "svg/svgo": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
   }
 }
