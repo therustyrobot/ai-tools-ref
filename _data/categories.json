@@ -3678,5 +3678,20 @@
     "category": "Dev Tools & CLI",
     "subcategory": "Other Dev Tools",
     "slug": "dev-tools-cli"
+  },
+  "penpot/penpot": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "altic-dev/FluidVoice": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "repowise-dev/repowise": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Documentation & Sites",
+    "slug": "dev-tools-cli"
   }
 }
