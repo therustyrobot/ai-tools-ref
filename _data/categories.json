@@ -3693,5 +3693,65 @@
     "category": "Dev Tools & CLI",
     "subcategory": "Documentation & Sites",
     "slug": "dev-tools-cli"
+  },
+  "activepieces/activepieces": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "wshobson/agents": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "patchy631/ai-engineering-hub": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "alibaba/nacos": {
+    "category": "AI & ML",
+    "subcategory": "AI Infrastructure & APIs",
+    "slug": "ai-ml"
+  },
+  "github/github-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "ComposioHQ/composio": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "78/xiaozhi-esp32": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "farion1231/cc-switch": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "mindsdb/minds": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "sickn33/agentic-awesome-skills": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "arwes/arwes": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "skeletonlabs/skeleton": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
   }
 }
