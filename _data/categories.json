@@ -3734,11 +3734,6 @@
     "subcategory": "Generalist Agents",
     "slug": "ai-ml"
   },
-  "mindsdb/minds": {
-    "category": "AI & ML",
-    "subcategory": "AI Productivity Tools",
-    "slug": "ai-ml"
-  },
   "sickn33/agentic-awesome-skills": {
     "category": "AI & ML",
     "subcategory": "Claude Code & Skills",
@@ -3753,5 +3748,20 @@
     "category": "Web & Frontend",
     "subcategory": "Other",
     "slug": "web-frontend"
+  },
+  "Razee4315/Paperling": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "Uzaaft/awesome-libghostty": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
+  },
+  "mindsdb/mindshub": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
   }
 }
