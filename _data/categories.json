@@ -2789,11 +2789,6 @@
     "subcategory": "Generalist Agents",
     "slug": "ai-ml"
   },
-  "amittell/firewalla-mcp-server": {
-    "category": "AI & ML",
-    "subcategory": "MCP Servers & Tools",
-    "slug": "ai-ml"
-  },
   "yousifamanuel/terraink": {
     "category": "Media & Entertainment",
     "subcategory": "Media & Entertainment",
@@ -3853,5 +3848,35 @@
     "category": "AI & ML",
     "subcategory": "LLM UIs & Chat Interfaces",
     "slug": "ai-ml"
+  },
+  "matoslav/MicroGroove": {
+    "category": "Media & Entertainment",
+    "subcategory": "Other",
+    "slug": "media-entertainment"
+  },
+  "DeusData/codebase-memory-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "mksglu/context-mode": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "responsively-org/responsively-app": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "msitarzewski/brew-browser": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "milanvarady/Applite": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
   }
 }
