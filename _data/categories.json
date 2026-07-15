@@ -1304,11 +1304,6 @@
     "subcategory": "Claude Code & Skills",
     "slug": "ai-ml"
   },
-  "ComposioHQ/awesome-codex-skills": {
-    "category": "AI & ML",
-    "subcategory": "Claude Code & Skills",
-    "slug": "ai-ml"
-  },
   "Z4nzu/hackingtool": {
     "category": "Security",
     "subcategory": "Security",
@@ -3878,5 +3873,15 @@
     "category": "Dev Tools & CLI",
     "subcategory": "Other Dev Tools",
     "slug": "dev-tools-cli"
+  },
+  "firewalla/msp-api-examples": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Other Dev Tools",
+    "slug": "dev-tools-cli"
+  },
+  "composio-community/awesome-codex-skills": {
+    "category": "Awesome Lists",
+    "subcategory": "Awesome Lists",
+    "slug": "awesome-lists"
   }
 }
