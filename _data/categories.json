@@ -594,11 +594,6 @@
     "subcategory": "Dashboards & Homepages",
     "slug": "self-hosting-homelab"
   },
-  "Priveetee/TypeType": {
-    "category": "Media & Entertainment",
-    "subcategory": "Media & Entertainment",
-    "slug": "media-entertainment"
-  },
   "silverbulletmd/silverbullet": {
     "category": "Productivity & Notes",
     "subcategory": "Productivity & Notes",
@@ -792,11 +787,6 @@
   "sumon-ohid/better-paas": {
     "category": "Self-Hosting & Homelab",
     "subcategory": "Deployment & PaaS",
-    "slug": "self-hosting-homelab"
-  },
-  "pewdiepie-archdaemon/odysseus": {
-    "category": "Self-Hosting & Homelab",
-    "subcategory": "Other",
     "slug": "self-hosting-homelab"
   },
   "Panniantong/Agent-Reach": {
@@ -3883,5 +3873,30 @@
     "category": "Awesome Lists",
     "subcategory": "Awesome Lists",
     "slug": "awesome-lists"
+  },
+  "reviewdog/reviewdog": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Automation & Scraping",
+    "slug": "dev-tools-cli"
+  },
+  "Nutlope/hallmark": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "virattt/ai-hedge-fund": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "TypeType-Video/TypeType": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "odysseus-dev/odysseus": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Other",
+    "slug": "self-hosting-homelab"
   }
 }
