@@ -3898,5 +3898,25 @@
     "category": "Self-Hosting & Homelab",
     "subcategory": "Other",
     "slug": "self-hosting-homelab"
+  },
+  "ClawLink-HQ/clawlink": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "openclaw/clawhub": {
+    "category": "AI & ML",
+    "subcategory": "Claude Code & Skills",
+    "slug": "ai-ml"
+  },
+  "daggerhashimoto/openclaw-nerve": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "amittell/firewalla-mcp-server": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
   }
 }
