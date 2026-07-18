@@ -3759,17 +3759,7 @@
     "subcategory": "Media & Arr Stack",
     "slug": "self-hosting-homelab"
   },
-  "JasonYeYuhe/cli-pulse-private": {
-    "category": "Dev Tools & CLI",
-    "subcategory": "Other Dev Tools",
-    "slug": "dev-tools-cli"
-  },
   "steipete/CodexBar": {
-    "category": "AI & ML",
-    "subcategory": "AI Productivity Tools",
-    "slug": "ai-ml"
-  },
-  "JasonYeYuhe/cli-pulse": {
     "category": "AI & ML",
     "subcategory": "AI Productivity Tools",
     "slug": "ai-ml"
@@ -3917,6 +3907,36 @@
   "amittell/firewalla-mcp-server": {
     "category": "AI & ML",
     "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
+  },
+  "Humalike/hermes-humalike-plugin": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "mannders00/Reticle": {
+    "category": "DevOps & Infra",
+    "subcategory": "DevOps & Infra",
+    "slug": "devops-infra"
+  },
+  "bookorbit/bookorbit": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "melt-ui/melt-ui": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "huntabyte/bits-ui": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "cli-pulse/cli-pulse": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
     "slug": "ai-ml"
   }
 }
