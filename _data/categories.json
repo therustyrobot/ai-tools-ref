@@ -184,11 +184,6 @@
     "subcategory": "Deployment & PaaS",
     "slug": "devops-infra"
   },
-  "mauriceboe/TREK": {
-    "category": "Self-Hosting & Homelab",
-    "subcategory": "Notes & Knowledge",
-    "slug": "self-hosting-homelab"
-  },
   "DonMcD/ultimate-plex-stack": {
     "category": "Media & Entertainment",
     "subcategory": "Media & Arr Stack",
@@ -3938,5 +3933,10 @@
     "category": "AI & ML",
     "subcategory": "AI Productivity Tools",
     "slug": "ai-ml"
+  },
+  "liketrek/TREK": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Tools & Utilities",
+    "slug": "self-hosting-homelab"
   }
 }
