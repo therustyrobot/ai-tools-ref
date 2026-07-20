@@ -3938,5 +3938,10 @@
     "category": "Self-Hosting & Homelab",
     "subcategory": "Tools & Utilities",
     "slug": "self-hosting-homelab"
+  },
+  "serversathome/homelabhero": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
   }
 }
