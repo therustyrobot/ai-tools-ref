@@ -3943,5 +3943,105 @@
     "category": "Self-Hosting & Homelab",
     "subcategory": "Deployment & PaaS",
     "slug": "self-hosting-homelab"
+  },
+  "tinykit-studio/tinykit": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "nextify-limited/libra": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "dyad-sh/dyad": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "ntegrals/december": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "crawlseo/crawlseo": {
+    "category": "Data & Analytics",
+    "subcategory": "Other",
+    "slug": "data-analytics"
+  },
+  "webrecorder/archiveweb.page": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "saadeghi/daisyui": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
+  },
+  "VERT-sh/VERT": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "imputnet/cobalt": {
+    "category": "Other",
+    "subcategory": "Other",
+    "slug": "other"
+  },
+  "Finsys/dockhand": {
+    "category": "DevOps & Infra",
+    "subcategory": "Other",
+    "slug": "devops-infra"
+  },
+  "kdlbs/kandev": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
+  },
+  "nearai/ironclaw": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "oblien/openship": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "tokio-rs/topcoat": {
+    "category": "Web & Frontend",
+    "subcategory": "Web & Frontend",
+    "slug": "web-frontend"
+  },
+  "KnockOutEZ/wigolo": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "AstrBotDevs/AstrBot": {
+    "category": "AI & ML",
+    "subcategory": "Agent Frameworks & Harnesses",
+    "slug": "ai-ml"
+  },
+  "topoteretes/cognee": {
+    "category": "AI & ML",
+    "subcategory": "RAG & Knowledge",
+    "slug": "ai-ml"
+  },
+  "jamiepine/voicebox": {
+    "category": "AI & ML",
+    "subcategory": "AI Productivity Tools",
+    "slug": "ai-ml"
+  },
+  "tirth8205/code-review-graph": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "rolandreads/bazzite-mcp": {
+    "category": "AI & ML",
+    "subcategory": "MCP Servers & Tools",
+    "slug": "ai-ml"
   }
 }
