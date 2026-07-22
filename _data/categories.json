@@ -4043,5 +4043,30 @@
     "category": "AI & ML",
     "subcategory": "MCP Servers & Tools",
     "slug": "ai-ml"
+  },
+  "resourcespace/docker": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Deployment & PaaS",
+    "slug": "self-hosting-homelab"
+  },
+  "resourcespace/resourcespace": {
+    "category": "Self-Hosting & Homelab",
+    "subcategory": "Media & Arr Stack",
+    "slug": "self-hosting-homelab"
+  },
+  "webadderallorg/Recordly": {
+    "category": "Media & Entertainment",
+    "subcategory": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "dongdongbh/Mindwtr": {
+    "category": "Productivity & Notes",
+    "subcategory": "Productivity & Notes",
+    "slug": "productivity-notes"
+  },
+  "mpiorowski/late-sh": {
+    "category": "Dev Tools & CLI",
+    "subcategory": "Terminal & Shell",
+    "slug": "dev-tools-cli"
   }
 }
