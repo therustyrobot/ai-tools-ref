@@ -4068,5 +4068,15 @@
     "category": "Dev Tools & CLI",
     "subcategory": "Terminal & Shell",
     "slug": "dev-tools-cli"
+  },
+  "jazzenchen/VibeAround": {
+    "category": "AI & ML",
+    "subcategory": "Coding Agents & IDEs",
+    "slug": "ai-ml"
+  },
+  "UrbanWafflezz/GilbertRift": {
+    "category": "AI & ML",
+    "subcategory": "Generalist Agents",
+    "slug": "ai-ml"
   }
 }
