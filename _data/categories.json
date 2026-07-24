@@ -4078,5 +4078,10 @@
     "category": "AI & ML",
     "subcategory": "Generalist Agents",
     "slug": "ai-ml"
+  },
+  "ionic-team/ionicons": {
+    "category": "Web & Frontend",
+    "subcategory": "Other",
+    "slug": "web-frontend"
   }
 }
